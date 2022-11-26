@@ -30,12 +30,132 @@
 
 
 body {
-    font-family: Segoe UI, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     color: #000;
 }
 
 .container {
-    max-width: 1024px;
+    max-width: 1252px;
     margin: 0 auto;
-    padding: 15px;
+    padding: 0 15px;
 }
+
+/*Header starts*/
+header {
+    padding: 16px 0;
+    background-color: #6725A8;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 8px;
+    margin: 4px 0;
+    padding: 12px 10px;
+    cursor: pointer;
+}
+
+.logo-wrapper{
+    display: flex;
+    gap: 16px
+}
+
+.logo {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.logo_text {
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    font-variant: small-caps;
+    color: #fff;
+}
+
+.search_bar {
+    position: relative;
+    flex-basis: 870px;
+    margin: 0 32px;
+}
+
+.search_bar_placeholder{
+    width: 100%;
+    padding: 15px 55px 15px 20px;
+    border-radius: 36px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+
+}
+
+.search_bar_placeholder::-webkit-input-placeholder {
+    color:#fff;
+    opacity: 0.5;
+}
+
+.search-button {
+    position: absolute;
+    right: 23px;
+    top: 14px;
+    opacity: 0.5;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.menu-items{
+    display: flex;
+    align-items: center;
+    gap: 41px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    padding-top: 5px;
+}
+
+.item img {
+    height: 28px;
+    width: 28px;
+}
+
+.item_text {
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.round {
+    background-color: #F55123;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.count_items {
+    color: #fff;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 18px;
+}
+/*Header ends*/
+
