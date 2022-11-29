@@ -68,6 +68,7 @@ header {
 }
 
 .logo {
+    width: 75px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -170,7 +171,6 @@ header {
 
 .products_wrapper{
     width: 80%;
-    position: relative;
 }
 
 .basket {
@@ -180,22 +180,65 @@ header {
     margin-bottom: 25px;
 }
 
-.select {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    display: inline-block;
-    margin-bottom: 20px;
+.label_select_all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
 }
 
 .checkbox {
     display: none;
 }
 
-.select{
+.checkbox_wrapper {
+    display: flex;
     position: relative;
-    padding-left: 32px;
-    display: inline-block;
+    column-gap: 33px;
+}
+
+
+.select_all {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    position: relative;
+    column-gap: 15px;
+}
+
+.select_all::before {
+    content: "";
+    display:block;
+    width: 22px;
+    height: 22px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.select_all::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-color: #CB11AB;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/images/products/checkmark.svg");
+    border-radius: 8px;
+    opacity: 0;
+    transition: .2s ease;
+}
+
+.checkbox:checked + .select_all::after {
+    opacity: 1;
+}
+
+.select {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .select::before {
@@ -206,14 +249,14 @@ header {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     position: absolute;
-    top: 1px;
+    top: 34px;
     left: 0;
 }
 
 .select::after{
     content: "";
     position: absolute;
-    top: 1px;
+    top: 34px;
     left: 0;
     width: 22px;
     height: 22px;
@@ -234,12 +277,12 @@ header {
     background: rgba(0, 0, 0, 0.1);
     height: 1px;
     width: 100%;
-    margin-bottom: 11px;
+    margin-bottom: 15px;
 }
 
 .product {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     margin-bottom: 32px;
 }
 
@@ -250,26 +293,26 @@ header {
     margin-right: 16px;
 }
 
-.description {
-    display: flex;
-    gap: 270px;
-}
-
 .left_side {
     display: flex;
-    flex-direction: column;
-    width: 275px;
+}
 
+.description {
+    display: flex;
+    flex-direction: column;
+    max-width: 275px;
 }
 
 .name_product {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 8px;
 }
 
 .features {
     font-size: 13px;
     line-height: 16px;
+    margin-bottom: 8px;
 }
 
 .warehouse {
@@ -294,13 +337,13 @@ header {
     width: 25%;
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    right: 0;
+    column-gap: 16px;
 }
 
 .counter_wrapper {
     display: flex;
     flex-direction: column;
+    margin-right: 16px;
 }
 
 .counter {
@@ -341,8 +384,9 @@ header {
 
 .images {
     display: flex;
-    flex-direction: row-reverse;
-    gap: 20px;
+    flex-direction: row;
+    justify-content: flex-end;
+    column-gap: 20px;
 }
 
 .images svg {
@@ -354,20 +398,30 @@ header {
     cursor: pointer;
 }
 .price {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.full_price {
+    display: flex;
+    column-gap: 5px;
 }
 
 .sum {
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
+}
 
+.val {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
 }
 
 .discount{
-    position: absolute;
-    top: 35px;
-    right: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 .discount_text {
     font-weight: 400;
@@ -392,3 +446,52 @@ header {
 }
 
 /*Products ends*/
+
+/*Missing products starts*/
+.missing_products_wrapper {
+    width: 80%;
+}
+
+.missing_heading_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.missing_heading {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.product_image_grey{
+    width: 72px;
+    height: 96px;
+    filter: grayscale(1);
+    border-radius: 8px;
+    margin-left: 33px;
+    margin-right: 15px;
+}
+
+.name_product_grey {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #A0A0A4;
+}
+
+.features_grey {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #A0A0A4;
+}
+
+.right_side_grey {
+    width: 25%;
+    display: flex;
+    padding-left: 44px;
+}
+
+/*Missing products ends*/
