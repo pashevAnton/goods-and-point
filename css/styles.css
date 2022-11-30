@@ -32,12 +32,17 @@
 body {
     font-family: Segoe UI, sans-serif;
     color: #000;
+    background-color: #F6F6FA;
 }
 
 .container {
     max-width: 1370px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.arrow {
+    cursor: pointer;
 }
 
 /*Header starts*/
@@ -165,12 +170,17 @@ header {
 .products {
     padding-top: 40px;
     border-radius: 24px 24px 0 0;
-    background-color: #F6F6FA;
     transform: translateY(-30px);
 }
 
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 .products_wrapper{
-    width: 80%;
+    width: 100%;
+    margin-right: 32px;
 }
 
 .basket {
@@ -180,7 +190,7 @@ header {
     margin-bottom: 25px;
 }
 
-.label_select_all {
+.label_select {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -193,52 +203,17 @@ header {
 
 .checkbox_wrapper {
     display: flex;
-    position: relative;
-    column-gap: 33px;
-}
-
-
-.select_all {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    position: relative;
     column-gap: 15px;
-}
-
-.select_all::before {
-    content: "";
-    display:block;
-    width: 22px;
-    height: 22px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-}
-
-.select_all::after{
-    content: "";
-    position: absolute;
-    display: block;
-    width: 22px;
-    height: 22px;
-    background-color: #CB11AB;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("/images/products/checkmark.svg");
-    border-radius: 8px;
-    opacity: 0;
-    transition: .2s ease;
-}
-
-.checkbox:checked + .select_all::after {
-    opacity: 1;
+    position: relative;
 }
 
 .select {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
 }
 
 .select::before {
@@ -248,16 +223,11 @@ header {
     height: 22px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    position: absolute;
-    top: 34px;
-    left: 0;
 }
 
 .select::after{
     content: "";
     position: absolute;
-    top: 34px;
-    left: 0;
     width: 22px;
     height: 22px;
     background-color: #CB11AB;
@@ -267,6 +237,11 @@ header {
     border-radius: 8px;
     opacity: 0;
     transition: .2s ease;
+}
+
+.select_menu {
+    position: absolute;
+    top: 38px;
 }
 
 .checkbox:checked + .select::after {
@@ -291,10 +266,13 @@ header {
     width: 72px;
     border-radius: 8px;
     margin-right: 16px;
+    margin-left: 19px;
 }
 
 .left_side {
     display: flex;
+    max-width: 396px;
+    margin-right: auto;
 }
 
 .description {
@@ -334,10 +312,10 @@ header {
 }
 
 .right_side {
-    width: 25%;
     display: flex;
     justify-content: space-between;
     column-gap: 16px;
+    width: 30%;
 }
 
 .counter_wrapper {
@@ -411,12 +389,7 @@ header {
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
-}
-
-.val {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
+    white-space: nowrap;
 }
 
 .discount{
@@ -444,12 +417,232 @@ header {
     bottom: 0;
     left: 0;
 }
+/*Cheque starts*/
+.cheque {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    padding: 16px 23px 24px;
+    width: 45%;
+    height: 572px;
+    background-color: #fff;
+}
+
+.total_name_title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.total_name_title h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.total_name_title span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+}
+
+.total_name {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.total_name h5 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.total_name span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.delivery {
+    display: flex;
+    flex-direction: column;
+}
+
+.point_issue {
+    display: flex;
+    justify-content: space-between;
+}
+
+.point_issue h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.point_issue img {
+    cursor: pointer;
+}
+
+.address {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.date {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #CB11AB;
+    position: relative;
+    margin-bottom: 13px;
+}
+
+.date::after {
+    position: absolute;
+    content: "";
+    border: none;
+    border-top: 1px dashed rgba(203, 17, 171, 0.2);
+    height: 1px;
+    width: 47px;
+    bottom: -2px;
+    left: 0;
+}
+
+.free_delivery {
+    display: flex;
+    column-gap: 9px;
+    background: #F6F6FA;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.free_delivery p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.free_delivery span {
+    color: #0CB477;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    position: relative;
+}
+
+.free_delivery span::after {
+    position: absolute;
+    content: "";
+    border: none;
+    border-top: 1px dashed rgba(12, 180, 119, 0.2);
+    height: 1px;
+    width: 62px;
+    bottom: -1px;
+    left: 0;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment_title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment_title h4{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card_img {
+    margin-right: 8px;
+}
+
+.number {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.write-down{
+    background: #F6F6FA;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 8px 8px 12px;
+}
+
+.select_cheque {
+    column-gap: 8px;
+    margin-bottom: 8px;
+}
+
+.write-down p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.payment_button_wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.payment_button {
+    max-width: 380px;
+    height: 44px;
+    background: #CB11AB;
+    border-radius: 8px;
+}
+
+.text_button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.agreement {
+    display: flex;
+    position: relative;
+}
+
+.agreement img {
+    position: absolute;
+    top: 5px;
+}
+
+.agreement span {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    margin-left: 20px;
+}
+/*Cheque starts*/
 
 /*Products ends*/
 
 /*Missing products starts*/
 .missing_products_wrapper {
-    width: 80%;
+    width: 67%;
 }
 
 .missing_heading_wrapper {
@@ -489,9 +682,9 @@ header {
 }
 
 .right_side_grey {
-    width: 25%;
+    width: 30%;
     display: flex;
-    padding-left: 44px;
+    padding-left: 40px;
 }
 
 /*Missing products ends*/
