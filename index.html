@@ -45,9 +45,7 @@
                     <span class="item_text">
                         Корзина
                     </span>
-                    <div class="round">
-                        <span class="count_items">3</span>
-                    </div>
+                    <div class="round">3</div>
                 </button>
             </div>
         </div>
@@ -259,11 +257,11 @@
                         <h4>Доставка в пункт выдачи</h4>
                         <img src="images/cheque/pencil.svg" alt="pencil.svg">
                     </div>
-                    <p class="address">
+                    <p class="cheque_address">
                         Бишкек, улица Ахматбека Суюмбаева, 12/1
                     </p>
                     <span class="date">5–8 фев</span>
-                    <div class="free_delivery">
+                    <div class="back_delivery">
                         <img src="images/cheque/price_shipping_icon.svg" alt="price_shipping_icon.svg">
                         <p>Обратная доставка товаров на склад при отказе —
                             <span>бесплатно</span>
@@ -295,7 +293,8 @@
                     </button>
                     <div class="agreement">
                         <img src="images/cheque/black_checkmark.svg" alt="black_checkmark.svg">
-                        <span >Соглашаюсь с правилами пользования торговой площадкой и возврата</span>
+                        <p>Соглашаюсь <span class="rules">с правилами пользования торговой площадкой</span><br/>и <span
+                                class="rules">возврата</span></p>
                     </div>
                 </div>
             </div>
@@ -392,5 +391,126 @@
     </div>
 </section>
 <!--missing_products-->
+<!--delivery_method-->
+<section class="delivery_method">
+    <div class="container">
+        <div class="block_wrapper">
+            <div class="title">
+                <h2>Способ доставки</h2>
+                <a href="#">Изменить</a>
+            </div>
+            <div class="content">
+                <div class="left_side_content">
+                    <h5>Пункт выдачи</h5>
+                    <h5>Стоимость доставки</h5>
+                    <h5>5-6 февраля</h5>
+                    <h5>7-8 февраля</h5>
+                </div>
+                <div class="right_side_content">
+                    <div class="delivery_point">
+                        <p class="address">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+                        <div class="feedback">
+                            <img src="images/star.svg" alt="star.svg">
+                            <span>4.99</span>
+                            <p>Ежедневно с 10 до 21</p>
+                        </div>
+                    </div>
+                    <span class="delivery_price">Бесплатно</span>
+                    <div class="products_images">
+                        <img src="images/products/product_1.jpeg" alt="product_1.jpeg">
+                        <div class="image_item">
+                            <img src="images/products/product_2.jpeg" alt="product_2.jpeg">
+                            <div class="round">184</div>
+                        </div>
+                        <div class="image_item">
+                            <img src="images/products/product_3.jpeg" alt="product_3.jpeg">
+                            <div class="round">2</div>
+                        </div>
+                    </div>
+                    <div class="products_images">
+                        <div class="image_item">
+                            <img src="images/products/product_2.jpeg" alt="product_2.jpeg">
+                            <div class="round">16</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="back_delivery back_delivery_main">
+                <img src="images/cheque/price_shipping_icon.svg" alt="price_shipping_icon.svg">
+                <p>Обратная доставка товаров на склад при отказе —
+                    <span>бесплатно</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--delivery_method-->
+<!--payment_methods-->
+<section class="payment_methods">
+    <div class="container">
+        <div class="block_wrapper block_wrapper_2">
+            <div class="title">
+                <h2>Способ оплаты</h2>
+                <a href="#">Изменить</a>
+            </div>
+            <div class="card card_2">
+                <img class="card_img" src="images/cheque/card.svg" alt="card.svg">
+                <div class="card_code">
+                    <span class="number">1234 12•• •••• 1234</span>
+                    <span class="code">01/30</span>
+                </div>
+            </div>
+            <p class="debiting">Спишем оплату с карты при получении</p>
+        </div>
+    </div>
+</section>
+<!--payment_methods-->
+<!--data_recipient-->
+<section class="data_recipient">
+    <div class="container">
+        <div class="block_wrapper">
+            <div class="title">
+                <h2>Получатель</h2>
+            </div>
+            <form class="recipient_form" action="">
+                <div class="form_row">
+                    <div class="form_group">
+                        <input class="input_form_group" type="text" placeholder=" ">
+                        <label class="label_form_group">Имя</label>
+                    </div>
+                    <div class="form_group">
+                        <input class="input_form_group" type="text" placeholder=" ">
+                        <label class="label_form_group">Фамилия</label>
+                    </div>
+                </div>
+                <div class="form_row">
+                    <div class="form_group">
+                        <input class="input_form_group" type="text" placeholder=" ">
+                        <label class="label_form_group">Почта</label>
+                    </div>
+                    <div class="form_group">
+                        <input class="input_form_group" type="text" placeholder=" ">
+                        <label class="label_form_group">Телефон</label>
+                    </div>
+                    <div class="form_group">
+                        <input class="input_form_group" type="text" placeholder=" ">
+                        <label class="label_form_group">Инн</label>
+                        <p class="form_group_subtitle">
+                            Для таможенного оформления
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!--data_recipient-->
+<!--footer-->
+<footer class="footer">
+    <div class="container">
+        <p class="name_company">© 2022 ООО «Товары и точка»</p>
+    </div>
+</footer>
+<!--footer-->
 </body>
 </html>
