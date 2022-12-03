@@ -4,8 +4,7 @@
     url('../fonts/Segoe UI Regular/SegoeUI.ttf') format('truetype'),
     url('../fonts/Segoe UI Regular/SegoeUI.woff') format('woff'),
     url('../fonts/Segoe UI Regular/SegoeUI.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
+
 }
 
 @font-face {
@@ -14,8 +13,6 @@
     url('../fonts/Segoe UI Bold/SegoeUI-Bold.ttf') format('truetype'),
     url('../fonts/Segoe UI Bold/SegoeUI-Bold.woff') format('woff'),
     url('../fonts/Segoe UI Bold/SegoeUI-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
 }
 
 @font-face {
@@ -24,13 +21,11 @@
     url('../fonts/Segoe UI Semibold/SegoeUI-Semibold.ttf') format('truetype'),
     url('../fonts/Segoe UI Semibold/SegoeUI-Semibold.woff') format('woff'),
     url('../fonts/Segoe UI Semibold/SegoeUI-Semibold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
 }
 
 
 body {
-    font-family: Segoe UI, sans-serif;
+    font-family: "Segoe UI", sans-serif;
     color: #000;
     background-color: #F6F6FA;
 }
@@ -65,6 +60,20 @@ header {
     margin: 4px 0;
     padding: 12px 10px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburger_line {
+    border-radius: 5px;
+    width: 27px;
+    height: 4px;
+    background: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.hamburger_line:last-child {
+    margin-bottom: 0;
 }
 
 .logo-wrapper{
@@ -73,18 +82,21 @@ header {
 }
 
 .logo {
-    width: 75px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .logo_text {
-    font-weight: 600;
+    font-family: "Segoe UI Semibold", sans-serif;
     font-size: 24px;
     line-height: 24px;
     letter-spacing: 0.02em;
     font-variant: small-caps;
     color: #fff;
-    white-space: nowrap;
+    width: 89px;
+}
+
+.logo-wrapper svg{
+    display: none;
 }
 
 .search_bar {
@@ -114,6 +126,10 @@ header {
     top: 14px;
     opacity: 0.5;
     background-color: rgba(255, 255, 255, 0);
+}
+
+.search-button svg{
+    fill: #fff;
 }
 
 .menu-items{
@@ -157,7 +173,7 @@ header {
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-weight: 700;
+    font-family: "Segoe UI Bold", sans-serif;
     font-size: 10px;
     line-height: 18px;
 }
@@ -174,15 +190,16 @@ header {
 .wrapper {
     display: flex;
     justify-content: space-between;
+    column-gap: 32px;
+    width: 100%;
 }
 
 .products_wrapper{
-    width: 100%;
-    margin-right: 32px;
+    width: 65%;
 }
 
 .basket {
-    font-weight: 700;
+    font-family: "Segoe UI Bold", sans-serif;
     font-size: 28px;
     line-height: 36px;
     margin-bottom: 25px;
@@ -269,14 +286,14 @@ header {
 
 .left_side {
     display: flex;
-    max-width: 396px;
-    margin-right: auto;
+    width: 65%;
 }
 
 .description {
     display: flex;
     flex-direction: column;
     max-width: 275px;
+    margin-right: 10px;
 }
 
 .name_product {
@@ -312,8 +329,7 @@ header {
 .right_side {
     display: flex;
     justify-content: space-between;
-    column-gap: 16px;
-    width: 30%;
+    width: 35%;
 }
 
 .counter_wrapper {
@@ -361,8 +377,8 @@ header {
 .images {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     column-gap: 20px;
+    padding-left: 45px;
 }
 
 .images svg {
@@ -384,7 +400,7 @@ header {
 }
 
 .sum {
-    font-weight: 700;
+    font-family: "Segoe UI Bold", sans-serif;
     font-size: 20px;
     line-height: 28px;
     white-space: nowrap;
@@ -423,7 +439,7 @@ header {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.3);
     border-radius: 16px;
     padding: 16px 23px 24px;
-    width: 45%;
+    width: 35%;
     height: 572px;
     background-color: #fff;
 }
@@ -434,13 +450,13 @@ header {
 }
 
 .total_name_title h2 {
-    font-weight: 700;
+    font-family: "Segoe UI Bold", sans-serif;
     font-size: 24px;
     line-height: 32px;
 }
 
 .total_name_title span {
-    font-weight: 700;
+    font-family: "Segoe UI Bold", sans-serif;
     font-size: 24px;
     line-height: 32px;
 }
@@ -479,7 +495,7 @@ header {
 }
 
 .point_issue h4 {
-    font-weight: 700;
+    font-family: "Segoe UI Bold", sans-serif;
     font-size: 16px;
     line-height: 24px;
 }
@@ -560,7 +576,7 @@ header {
 }
 
 .payment_title h4{
-    font-weight: 700;
+    font-family: "Segoe UI Bold", sans-serif;
     font-size: 16px;
     line-height: 24px;
 }
@@ -607,14 +623,13 @@ header {
 }
 
 .payment_button {
-    max-width: 380px;
     height: 44px;
     background: #CB11AB;
     border-radius: 8px;
 }
 
 .text_button {
-    font-weight: 700;
+    font-family: "Segoe UI Bold", sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: #fff;
@@ -631,11 +646,11 @@ header {
 }
 
 .agreement p {
+    display: inline;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     margin-left: 20px;
-    white-space: nowrap;
 }
 
 .rules {
@@ -661,7 +676,8 @@ header {
     margin-bottom: 56px;
 }
 .missing_products_wrapper {
-    width: 67%;
+    width: 65%;
+    padding-right: 32px;
 }
 
 .missing_heading_wrapper {
@@ -671,7 +687,7 @@ header {
 }
 
 .missing_heading {
-    font-weight: 600;
+    font-family: "Segoe UI Semibold",sans-serif;
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 20px;
@@ -700,9 +716,8 @@ header {
 }
 
 .right_side_grey {
-    width: 30%;
+    width: 35%;
     display: flex;
-    padding-left: 30px;
 }
 /*Missing products ends*/
 
@@ -718,7 +733,7 @@ header {
     border-radius: 16px;
     background: #fff;
     padding: 16px 24px 24px;
-    width: 67%;
+    width: 65%;
 }
 
 .title {
@@ -728,14 +743,14 @@ header {
 }
 
 .title h2 {
-    font-weight: 700;
+    font-family: "Segoe UI Bold", sans-serif;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -0.01em;
 }
 
 .title a {
-    font-weight: 700;
+    font-family: "Segoe UI Bold", sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: #CB11AB;
@@ -753,7 +768,7 @@ header {
 }
 
 .left_side_content h5 {
-    font-weight: 600;
+    font-family: "Segoe UI Semibold", sans-serif;
     font-size: 16px;
     line-height: 24px;
 }
@@ -938,3 +953,31 @@ header {
     padding: 24px 0;
 }
 /*Footer ends*/
+
+/*Down cheque starts*/
+.down_cheque {
+    border-bottom: 24px solid #F6F6FA;
+    border-radius: 24px;
+    position: relative;
+    z-index: 3;
+}
+
+.cheque_wrapper {
+
+}
+
+.second_cheque {
+    width: 100%;
+    box-shadow: none;
+    background-color: #F6F6FA;
+    display: none;
+    flex-direction: column;
+    row-gap: 24px;
+    padding: 16px 23px 24px;
+    height: 572px;
+}
+
+.back_delivery_down_cheque {
+    background-color: #F0ECF4;
+}
+/*Down cheque ends*/

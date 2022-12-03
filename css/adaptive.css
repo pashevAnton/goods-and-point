@@ -1,0 +1,120 @@
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .left_side {
+        width: 60%;
+    }
+
+    .right_side {
+        width: 40%;
+    }
+
+    .right_side_grey {
+        width: 40%;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .cheque {
+        display: none;
+    }
+
+    .second_cheque{
+        display: flex;
+    }
+
+    .total_name_title {
+        margin-bottom: 8px;
+    }
+
+    .products_wrapper {
+        width: 100%;
+    }
+
+    .missing_products_wrapper {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .block_wrapper {
+        width: 100%;
+    }
+
+    .back_delivery_down_cheque {
+        background: #F0ECF4;
+    }
+
+    .write-down {
+        background: #F0ECF4;
+    }
+
+    .agreement {
+        padding-top: 20px;
+    }
+
+    .agreement p {
+        font-size: 16px;
+    }
+
+    .agreement img {
+        top: 22px;
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+    header {
+        padding: 5px 0 30px;
+    }
+    .menu-items {
+        display: none;
+    }
+
+     .hamburger {
+         border: none;
+     }
+
+     .hamburger_line:last-child {
+         width: 20px;
+     }
+
+     .search_bar {
+         display: none;
+     }
+
+     .search-button {
+        position: static;
+     }
+
+     .logo-wrapper {
+         width: 100%;
+         justify-content: space-between;
+         align-items: center;
+         gap: unset;
+         white-space: nowrap;
+     }
+
+     .logo_text {
+         font-family: "Segoe UI Semibold", sans-serif;
+         font-size: 46px;
+         line-height: 24px;
+         letter-spacing: 0.02em;
+         font-variant: small-caps;
+         text-align: center;
+         width: 305px;
+         height: 41px;
+     }
+
+    .logo-wrapper svg {
+        fill: #FFFFFF;
+        display: initial;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}

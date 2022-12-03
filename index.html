@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/zeroing_styles.css">
+    <link rel="stylesheet" href="css/adaptive.css">
     <link type="image/svg" sizes="16x16" rel="icon" href="images/favicon.svg">
     <title>Товары и точка</title>
 </head>
@@ -17,20 +18,29 @@
         <div class="header-wrapper">
             <div class="logo-wrapper">
                 <div class="hamburger">
-                    <img src="images/header/hamburger.svg" alt="hamburger.svg">
+                    <div class="hamburger_line"></div>
+                    <div class="hamburger_line"></div>
+                    <div class="hamburger_line"></div>
                 </div>
                 <div class="logo">
                     <a href="#">
                         <h2 class="logo_text">
-                            товары<br/>и точка
+                            товары и точка
                         </h2>
                     </a>
                 </div>
+                <svg width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.93382 1.70286C5.44752 1.70286 2.62132 4.52907 2.62132 8.01536C2.62132 11.5017 5.44752 14.3279 8.93382 14.3279C12.4201 14.3279 15.2463 11.5017 15.2463 8.01536C15.2463 4.52907 12.4201 1.70286 8.93382 1.70286ZM0.937988 8.01536C0.937988 3.59939 4.51784 0.0195312 8.93382 0.0195312C13.3498 0.0195313 16.9296 3.59939 16.9296 8.01536C16.9296 12.4313 13.3498 16.0112 8.93382 16.0112C4.51784 16.0112 0.937988 12.4313 0.937988 8.01536Z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9602 12.8988C13.2846 12.5659 13.8175 12.559 14.1504 12.8834L20.1959 18.7751C20.5288 19.0995 20.5357 19.6324 20.2112 19.9653C19.8868 20.2982 19.3539 20.3051 19.021 19.9806L12.9756 14.089C12.6427 13.7645 12.6358 13.2317 12.9602 12.8988Z"/>
+                </svg>
             </div>
             <form class="search_bar">
                 <input class="search_bar_placeholder" placeholder="Я ищу..." type="text"/>
                 <button class="search-button">
-                    <img src="images/header/search.svg" alt="search.svg">
+                    <svg width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.93382 1.70286C5.44752 1.70286 2.62132 4.52907 2.62132 8.01536C2.62132 11.5017 5.44752 14.3279 8.93382 14.3279C12.4201 14.3279 15.2463 11.5017 15.2463 8.01536C15.2463 4.52907 12.4201 1.70286 8.93382 1.70286ZM0.937988 8.01536C0.937988 3.59939 4.51784 0.0195312 8.93382 0.0195312C13.3498 0.0195313 16.9296 3.59939 16.9296 8.01536C16.9296 12.4313 13.3498 16.0112 8.93382 16.0112C4.51784 16.0112 0.937988 12.4313 0.937988 8.01536Z"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9602 12.8988C13.2846 12.5659 13.8175 12.559 14.1504 12.8834L20.1959 18.7751C20.5288 19.0995 20.5357 19.6324 20.2112 19.9653C19.8868 20.2982 19.3539 20.3051 19.021 19.9806L12.9756 14.089C12.6427 13.7645 12.6358 13.2317 12.9602 12.8988Z"/>
+                    </svg>
                 </button>
             </form>
             <div class="menu-items">
@@ -293,8 +303,7 @@
                     </button>
                     <div class="agreement">
                         <img src="images/cheque/black_checkmark.svg" alt="black_checkmark.svg">
-                        <p>Соглашаюсь <span class="rules">с правилами пользования торговой площадкой</span><br/>и <span
-                                class="rules">возврата</span></p>
+                        <p>Соглашаюсь <span class="rules">с правилами пользования торговой площадкой</span><br/>и <span class="rules">возврата</span></p>
                     </div>
                 </div>
             </div>
@@ -505,6 +514,78 @@
     </div>
 </section>
 <!--data_recipient-->
+<!--down cheque-->
+<section class="down_cheque">
+    <div class="container">
+        <div class="cheque_wrapper">
+            <div class="second_cheque">
+                <div class="total_name_title">
+                    <h2>Итого</h2>
+                    <span>2 101 063 сом</span>
+                </div>
+                <div class="total">
+                    <div class="total_name">
+                        <h5>4 товара</h5>
+                        <span>2 302 048 сом</span>
+                    </div>
+                    <div class="total_name">
+                        <h5>Скидка</h5>
+                        <span>-200 985 сом</span>
+                    </div>
+                    <div class="total_name">
+                        <h5>Доставка</h5>
+                        <span>Бесплатно</span>
+                    </div>
+                </div>
+                <div class="delivery">
+                    <div class="point_issue">
+                        <h4>Доставка в пункт выдачи</h4>
+                        <img src="images/cheque/pencil.svg" alt="pencil.svg">
+                    </div>
+                    <p class="cheque_address">
+                        Бишкек, улица Ахматбека Суюмбаева, 12/1
+                    </p>
+                    <span class="date">5–8 фев</span>
+                    <div class="back_delivery back_delivery_down_cheque">
+                        <img src="images/cheque/price_shipping_icon.svg" alt="price_shipping_icon.svg">
+                        <p>Обратная доставка товаров на склад при отказе —
+                            <span>бесплатно</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="payment">
+                    <div class="payment_title">
+                        <h4>Оплата картой</h4>
+                        <img src="images/cheque/pencil.svg" alt="pencil.svg">
+                    </div>
+                    <div class="card">
+                        <img class="card_img" src="images/cheque/card.svg" alt="card.svg">
+                        <span class="number">1234 12•• •••• 1234</span>
+                    </div>
+                    <div class="write-down">
+                        <label class="label">
+                            <input type="checkbox" class="checkbox">
+                            <span class="select select_cheque">Списать оплату сразу</span>
+                        </label>
+                        <p>Спишем оплату с карты при получении</p>
+                    </div>
+                </div>
+                <div class="payment_button_wrapper">
+                    <button class="payment_button">
+                        <span class="text_button">
+                            Заказать
+                        </span>
+                    </button>
+                    <div class="agreement">
+                        <img src="images/cheque/black_checkmark.svg" alt="black_checkmark.svg">
+                        <p>Соглашаюсь <span class="rules">с правилами пользования торговой площадкой</span> и <span class="rules">возврата</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--down cheque-->
 <!--footer-->
 <footer class="footer">
     <div class="container">
