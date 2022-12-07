@@ -65,56 +65,460 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    .left_side {
+        width: 55%;
+    }
 
+    .right_side {
+        width: 45%;
+    }
+
+    .right_side_grey {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width : 590px) {
+    .left_side {
+        width: 50%;
+    }
+
+    .right_side {
+        width: 50%;
+    }
+
+    .right_side_grey {
+        width: 50%;
+    }
+
+    .shop_container {
+        white-space: nowrap;
+    }
+
+}
+
+@media only screen and (max-width : 578px) {
     header {
         padding: 5px 0 30px;
     }
+
     .menu-items {
         display: none;
     }
 
-     .hamburger {
-         border: none;
-     }
+    .hamburger {
+        border: none;
+    }
 
-     .hamburger_line:last-child {
-         width: 20px;
-     }
+    .hamburger_line:last-child {
+        width: 20px;
+    }
 
-     .search_bar {
-         display: none;
-     }
+    .search_bar {
+        display: none;
+    }
 
-     .search-button {
+    .search-button {
         position: static;
-     }
+    }
 
-     .logo-wrapper {
-         width: 100%;
-         justify-content: space-between;
-         align-items: center;
-         gap: unset;
-         white-space: nowrap;
-     }
+    .logo-wrapper {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        gap: unset;
+        white-space: nowrap;
+    }
 
-     .logo_text {
-         font-family: "Segoe UI Semibold", sans-serif;
-         font-size: 46px;
-         line-height: 24px;
-         letter-spacing: 0.02em;
-         font-variant: small-caps;
-         text-align: center;
-         width: 305px;
-         height: 41px;
-     }
+    .logo_text {
+        font-family: "Segoe UI Semibold", sans-serif;
+        font-size: 46px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        font-variant: small-caps;
+        text-align: center;
+        width: 305px;
+        height: 41px;
+    }
 
     .logo-wrapper svg {
         fill: #FFFFFF;
         display: initial;
     }
+
+    .left_side_content h5:first-child {
+        height: 63px;
+        line-height: 1;
+    }
+}
+
+@media only screen and (max-width : 565px) {
+    .left_side {
+        width: 45%;
+        margin-right: 0;
+    }
+
+    .right_side {
+        width: 52%;
+    }
+
+    .right_side_grey {
+        width: 52%;
+    }
+
+    .checkbox_wrapper {
+        column-gap: 8px;
+    }
+
+    .description {
+        max-width: 100px;
+    }
+
+    .name_product {
+        font-size: 14px;
+    }
+
+    .name_product_grey {
+        font-size: 14px;
+    }
+
+    .product_image {
+        margin-right: 8px;
+    }
+
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 500px) {
+    header {
+        padding: 5px 0 30px;
+    }
+
+    .menu-items {
+        display: none;
+    }
+
+    .hamburger {
+        border: none;
+    }
+
+    .hamburger_line:last-child {
+        width: 20px;
+    }
+
+    .search_bar {
+        display: none;
+    }
+
+    .search-button {
+        position: static;
+    }
+
+    .logo-wrapper {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        gap: unset;
+        white-space: nowrap;
+    }
+
+    .logo_text {
+        font-family: "Segoe UI Semibold", sans-serif;
+        font-size: 46px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        font-variant: small-caps;
+        text-align: center;
+        width: 305px;
+        height: 41px;
+    }
+
+    .logo-wrapper svg {
+        fill: #FFFFFF;
+        display: initial;
+    }
+
+    .checkbox_wrapper {
+        column-gap: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left_side_content h5:nth-child(5) {
+        height: 26px;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .product_image {
+        margin-left: 0;
+        width: 80px;
+        height: 106px;
+    }
+
+    .shop_container {
+        display: none;
+    }
+
+    .select_menu {
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .right_side {
+        display: none;
+    }
+
+    .counter_wrapper {
+        flex-direction: row;
+    }
+
+    .product_image {
+        width: 80px;
+        height: 106px;
+    }
+
+    .mobile_price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 5px;
+    }
+
+    .discount_text {
+        white-space: nowrap;
+    }
+
+    .left_side {
+        width: 100%;
+    }
+
+    .description {
+        max-width: none;
+    }
+
+    .name_product {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .features span:nth-child(2) {
+        display: none;
+    }
+
+    .sum {
+        line-height: 14px;
+        font-size: 16px;
+    }
+
+    .counter {
+        width: 80px;
+        height: 32px;
+        margin-bottom: 0;
+    }
+
+    .remains {
+        margin-bottom: 0;
+    }
+
+    .bottom_product {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .images {
+        padding-left: 0;
+        column-gap: 40px;
+    }
+    
+    .mobile_params {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        background-color: #fff;
+        border-radius: 8px;
+        bottom: 4px;
+        left: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        font-size: 14px;
+        line-height: 16px;
+        padding-left: 2px;
+    }
+
+    .grey_product {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right_side_grey {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .features_grey span:nth-child(2) {
+        display: none;
+    }
+    
+    .image_grey_wrapper {
+        position: relative;
+    }
+
+    .name_product_grey {
+        font-size: 14px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .block_wrapper {
+        padding: 16px 16px 24px;
+        row-gap: unset;
+    }
+    
+
+    .delivery_point_mobile {
+        display: initial;
+    }
+
+    .delivery_price_mobile {
+        display: initial;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .products_images_mobile {
+        display: flex;
+        column-gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    .products_images_mobile img {
+        width: 40px;
+        height: 56px;
+        border-radius: 8px;
+    }
+
+    .delivery_price_mobile {
+        margin-bottom: 16px;
+    }
+
+    .right_side_content {
+        display: none;
+    }
+
+    .left_side_content {
+        width: 100%;
+        row-gap: unset;
+    }
+
+    .left_side_content h5:first-child {
+        line-height: 1;
+        height: 22px;
+    }
+
+    .title {
+        margin-bottom: 10px;
+    }
+
+    .address {
+        font-size: 14px;
+    }
+
+    .feedback {
+        margin-bottom: 16px;
+    }
+
+    .feedback span {
+        font-size: 14px;
+    }
+
+    .feedback p {
+        font-size: 14px;
+    }
+
+    .left_side_content h5:nth-child(3) {
+        height: 22px;
+        line-height: 1;
+    }
+
+    .delivery_price {
+        margin-bottom: 16px;
+    }
+
+    .products_images {
+        margin-bottom: 16px;
+    }
+
+    .card_2 {
+        margin-top: 0;
+    }
+
+    .form_row {
+        flex-direction: column;
+    }
+
+    .form_row:last-child .form_group:last-child {
+        margin-bottom: 0;
+    }
+
+    .data_recipient {
+        border-bottom: none;
+    }
+
+    .total_name_title h2 {
+        font-size: 20px;
+    }
+
+    .total_name_title span {
+        font-size: 20px;
+    }
+
+    .second_cheque {
+        row-gap: 16px;
+        height: 450px;
+    }
+
+    .write-down p {
+        font-size: 12px;
+    }
+
+    .total_name_title {
+        margin-bottom: 0;
+    }
+
+    .delivery {
+        display: none;
+    }
+
+    .agreement p {
+        font-size: 13px;
+    }
+
+    .logo_text {
+        width: 50%;
+        font-size: 32px;
+        line-height: 30px;
+    }
+
+    .hamburger {
+        padding: 12px 0;
+        width: 10%;
+    }
+
+    .logo-wrapper svg {
+        width: 10%;
+    }
 
 }

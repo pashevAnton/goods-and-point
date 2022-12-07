@@ -272,8 +272,29 @@ header {
 
 .product {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin-bottom: 32px;
+}
+
+.top_product {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.top_product:last-child {
+    margin-bottom: 0;
+}
+
+.mobile_params {
+    display: none;
+}
+
+.bottom_product {
+    display: none;
+}
+
+.mobile_price {
+    display: none;
 }
 
 .product_image {
@@ -410,13 +431,25 @@ header {
     display: flex;
     justify-content: flex-end;
 }
+
 .discount_text {
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     color: #A0A0A4;
-    text-decoration: line-through;
     position: relative
+}
+
+.discount_text::before {
+    position: absolute;
+    content: "";
+    border: none;
+    border-top: 1px solid #A0A0A4;
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
+    bottom: 35%;
+    left: 0;
 }
 
 .discount_text::after {
@@ -646,7 +679,7 @@ header {
 }
 
 .agreement p {
-    display: inline;
+    display: block;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
@@ -654,7 +687,7 @@ header {
 }
 
 .rules {
-    display: inline-block;
+    display: inline;
     position: relative;
 }
 
@@ -664,7 +697,7 @@ header {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     height: 1px;
     width: 100%;
-    bottom: -2px;
+    top: 100%;
     left: 0;
 }
 /*Cheque starts*/
@@ -691,6 +724,11 @@ header {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 20px;
+}
+
+.grey_product {
+    display: flex;
+    flex-direction: row;
 }
 
 .product_image_grey{
@@ -761,10 +799,22 @@ header {
     column-gap: 32px;
 }
 
+.delivery_point_mobile {
+    display: none;
+}
+
+.delivery_price_mobile {
+    display: none;
+}
+
+.products_images_mobile {
+    display: none;
+}
+
 .left_side_content {
     display: flex;
     flex-direction: column;
-    row-gap: 16px;
+    row-gap: 24px;
 }
 
 .left_side_content h5 {
@@ -774,19 +824,23 @@ header {
 }
 
 .left_side_content h5:first-child {
-    height: 44px;
+    height: 39px;
     line-height: 1;
 }
 
 .left_side_content h5:nth-child(3) {
-    height: 56px;
+    height: 10px;
     line-height: 1;
+    white-space: nowrap;
 }
 
-.left_side_content h5:last-child {
-    height: 56px;
+.left_side_content h5:nth-child(5) {
+    height: 45px;
     line-height: 1;
+    white-space: nowrap;
 }
+
+
 
 .right_side_content {
     display: flex;
