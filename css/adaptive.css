@@ -12,6 +12,7 @@
     .right_side_grey {
         width: 40%;
     }
+
 }
 
 /* Medium Devices, Desktops */
@@ -59,6 +60,10 @@
 
     .agreement img {
         top: 22px;
+    }
+
+    .right_side_grey {
+        padding-left: 0;
     }
 
 }

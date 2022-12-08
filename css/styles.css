@@ -372,7 +372,8 @@ header {
 }
 
 .minus {
-    transform: translateY(6px);
+    transform: translateY(8px);
+    background-color: #fff;
 }
 
 .number {
@@ -384,7 +385,8 @@ header {
 }
 
 .plus {
-    transform: translateY(2px);
+    transform: translateY(4px);
+    background-color: #fff;
 }
 
 .remains {
@@ -402,14 +404,31 @@ header {
     padding-left: 45px;
 }
 
-.images svg {
+.like {
     fill: #000;
     transition: all .2s;
 }
-.images svg:hover {
+
+.delete {
+    fill: #000;
+    transition: all .2s;
+}
+
+.like:hover {
     fill: #F55123;
     cursor: pointer;
 }
+
+.delete:hover {
+    fill: #F55123;
+    cursor: pointer;
+}
+
+.active_svg {
+    fill: #F55123;
+    cursor: pointer;
+}
+
 .price {
     display: flex;
     flex-direction: column;
@@ -710,7 +729,7 @@ header {
 }
 .missing_products_wrapper {
     width: 65%;
-    padding-right: 32px;
+    padding-right: 23px;
 }
 
 .missing_heading_wrapper {
