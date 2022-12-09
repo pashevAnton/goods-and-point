@@ -37,7 +37,12 @@ body {
 }
 
 .arrow {
-    cursor: pointer;
+    background: #F6F6FA;
+    transition: all 0.5s ease-in-out;
+}
+
+.not_active_arrow {
+    transform: rotateZ(180deg);
 }
 
 /*Header starts*/
@@ -194,8 +199,31 @@ header {
     width: 100%;
 }
 
-.products_wrapper{
+
+.heading_products_wrapper{
     width: 65%;
+}
+
+.title_heading_wrapper {
+    font-family: "Segoe UI Semibold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    display: none;
+}
+
+.not_active {
+    display: none;
+}
+
+.heading_products_wrapper:last-child {
+    width: 65%;
+    padding-right: 23px;
+}
+
+.heading_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .basket {
@@ -205,11 +233,13 @@ header {
     margin-bottom: 25px;
 }
 
-.label_select {
+.label_select_all {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 16px;
+    width: 128px;
+    height: 24px;
 }
 
 .checkbox {
@@ -339,6 +369,46 @@ header {
     display: flex;
     align-items: center;
     gap: 8px;
+    position: relative;
+}
+
+
+.shop_container a:hover > .info_shop {
+    display: block;
+}
+
+.info_shop {
+    position: absolute;
+    bottom: -110px;
+    left: 10px;
+    z-index: 5;
+    width: 280px;
+    height: 104px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 12px 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.3);
+    display: none;
+    color: #000;
+}
+
+.info_shop h4 {
+    font-family: "Segoe UI Bold", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.info_shop span {
+    font-size: 13px;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.info_shop p {
+    font-size: 13px;
+    line-height: 16px;
 }
 
 .shop {
@@ -449,14 +519,53 @@ header {
 .discount{
     display: flex;
     justify-content: flex-end;
+    position: relative;
+
 }
+
 
 .discount_text {
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     color: #A0A0A4;
-    position: relative
+    position: relative;
+    cursor: pointer;
+}
+
+.discount_text:hover > .detailed_discount {
+    display: block;
+}
+
+.detailed_discount {
+    display: none;
+    position: absolute;
+    bottom: -73px;
+    right: -10px;
+    width: 239px;
+    height: 64px;
+    padding: 12px 16px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.main_discount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.percent {
+    font-size: 13px;
+    line-height: 16px;
+    color: #A0A0A4;
+    margin-bottom: 10px;
+}
+
+.amount {
+    font-size: 13px;
+    line-height: 16px;
+    color: #000;
 }
 
 .discount_text::before {
@@ -464,7 +573,6 @@ header {
     content: "";
     border: none;
     border-top: 1px solid #A0A0A4;
-    background-color: #fff;
     height: 1px;
     width: 100%;
     bottom: 35%;
@@ -476,8 +584,6 @@ header {
     content: "";
     border: none;
     border-top: 1px dashed #A0A0A4;
-    color: #fff;
-    background-color: #fff;
     height: 1px;
     width: 100%;
     bottom: 0;
@@ -597,16 +703,40 @@ header {
     line-height: 16px;
 }
 
-.back_delivery span {
+.back_delivery_word {
     color: #0CB477;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     position: relative;
     cursor: pointer;
+    display: inline-block;
 }
 
-.back_delivery span::after {
+.back_delivery_word:hover > .free_delivery_terms {
+    display: block;
+}
+
+.free_delivery_terms {
+    display: none;
+    position: absolute;
+    bottom: -60px;
+    left: -117px;
+    color: #000;
+    width: 288px;
+    height: 56px;
+    padding: 10px 16px 14px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.free_delivery_terms p {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.back_delivery_word::after {
     position: absolute;
     content: "";
     border: none;
@@ -726,10 +856,6 @@ header {
 /*Missing products starts*/
 .missing_products {
     margin-bottom: 56px;
-}
-.missing_products_wrapper {
-    width: 65%;
-    padding-right: 23px;
 }
 
 .missing_heading_wrapper {
@@ -980,6 +1106,27 @@ header {
     font-size: 16px;
     line-height: 24px;
 }
+
+.input_form_group.error {
+    color: red;
+}
+
+.error_text {
+    position: absolute;
+    color: red;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+.error_row {
+    bottom: -20px;
+}
+
+.active {
+    display: block;
+}
+
 
 .label_form_group {
     font-weight: 400;

@@ -7,11 +7,55 @@ let finalPriceCheque = document.querySelector('.final_price_cheque')
 let priceCheque = document.querySelector('.price_cheque')
 let discountCheque = document.querySelector('.discount_cheque')
 let counterProducts = document.querySelector('.counter_products')
-let delivery_images = document.querySelectorAll('.product_image')
 
-const counter_wrappers = document.querySelectorAll('.counter_wrapper')
+let selectAll = document.querySelector('.label_select_all input')
+const selectMenu = document.querySelectorAll('.label_select input')
+
+const arrowButtons = document.querySelectorAll('.arrow')
+let select = document.querySelector('.select')
+let title_heading_wrapper = document.querySelector('.title_heading_wrapper')
+let select_cheque = document.querySelector('.label_cheque input')
+let textButton = document.querySelector('.text_button')
 
 
+/*Validation*/
+let form = document.querySelector('.recipient_form')
+let formInputs = document.querySelectorAll('.input_form_group')
+let inputEmail = document.querySelector('.input-email')
+let inputPhone = document.querySelector('.input-phone')
+let inputInn = document.querySelector('.input-inn')
+let paymentButton = document.querySelector('.payment_button')
+let errorText = document.querySelectorAll('.error_text')
+
+
+function validateEmail(email) {
+    let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+function validatePhone(phone) {
+    let re = /^[0-9\s]*$/;
+    return re.test(String(phone));
+}
+
+
+paymentButton.addEventListener('click', function() {
+
+    formInputs.forEach(input => {
+        errorText.forEach(elem => {
+            if(input.value === '') {
+                console.log(input.value)
+                elem.classList.add('active')
+            } else {
+                elem.classList.remove('active')
+            }
+        })
+    })
+})
+
+
+
+/*Like product*/
 like_mas.forEach(elem => {
     elem.addEventListener('click', function () {
         if (elem.classList.contains('like')) {
@@ -24,6 +68,7 @@ like_mas.forEach(elem => {
     })
 })
 
+/*Delete product*/
 active_delete_button_mas.forEach(elem => {
     elem.addEventListener('click', function () {
         let product = elem.closest('.product')
@@ -76,7 +121,6 @@ delete_button_mas.forEach(elem => {
     })
 })
 
-
 function counters() {
     if (parseInt(roundProducts.textContent) <= 1) {
         roundProducts.style.display = "none"
@@ -85,61 +129,62 @@ function counters() {
     }
 }
 
-
-
-counter_wrappers.forEach(elem => {
-    let ride_side = elem.closest('.right_side')
-    const pluses = ride_side.querySelectorAll('.plus')
-    const minuses = ride_side.querySelectorAll('.minus')
-    const numbers = ride_side.querySelectorAll('.number')
-    const remains = ride_side.querySelectorAll('.remains')
-
-    pluses.forEach( elem => {
-        elem.addEventListener('click', function () {
-            numbers.forEach( elem2 => {
-                elem2.textContent++
-                remains.forEach( elem3 => {
-                    let counter_remains = parseInt(elem3.textContent[9]) - 1
-                    console.log(elem2, counter_remains)
-                    if(parseInt(elem2.textContent) < counter_remains){
-                        elem3.style.display = "block"
-                        elem.removeAttribute('disabled')
-
-                    }
-                    if(counter_remains <= 0) {
-                        elem3.style.display = "none"
-                        elem.setAttribute('disabled', 'true')
-                    }
-                    if (counter_remains > 0) {
-                        elem3.innerHTML = "Осталось " + counter_remains + " шт."
-                    }
-                })
-            })
+/*Checkboxes*/
+let listBoolean = [];
+selectMenu.forEach(item=> {
+    item.addEventListener('change', function () {
+        selectMenu.forEach(i=> {
+            listBoolean.push(i.checked);
         })
+        if(listBoolean.includes(false)) {
+            selectAll.checked = false;
+        } else {
+            selectAll.checked = true;
+        }
+        listBoolean = []
     })
+})
 
-    minuses.forEach( elem => {
-        elem.addEventListener('click', function () {
-            numbers.forEach( elem2 => {
-
-                elem2.textContent--
-                remains.forEach( elem3 => {
-                    let counter_remains = parseInt(elem3.textContent[9]) + 1
-                    console.log(parseInt(elem2.textContent))
-                    if(counter_remains > 0){
-                        elem.removeAttribute('disabled')
-                    }
-                    if(parseInt(elem2.textContent) === 0) {
-                        elem.setAttribute('disabled', 'true')
-                    }
-                    if (counter_remains > 0) {
-                        elem3.innerHTML = "Осталось " + counter_remains + " шт."
-                    }
-                })
-            })
+selectAll.addEventListener('change', function () {
+    if(this.checked) {
+        selectMenu.forEach(i=> {
+            i.checked = true;
         })
-    })
+    } else {
+        selectMenu.forEach(i=> {
+            i.checked = false;
+        })
+    }
+})
 
+select_cheque.addEventListener('change', function(){
+    let resultFinalPriceCheque = finalPriceCheque.textContent.substring(0, finalPriceCheque.textContent.length - 4)
+    resultFinalPriceCheque = parseInt(resultFinalPriceCheque.replace(/\s+/g, ''))
+    if(this.checked){
+        textButton.textContent = `Оплатить ${resultFinalPriceCheque.toLocaleString()} сом`
+    } else {
+        textButton.textContent = "Заказать"
+    }
 })
 
 
+/*Arrow buttons*/
+arrowButtons.forEach( elem => {
+    elem.addEventListener('click', function () {
+        let heading_products_wrapper = elem.closest('.heading_products_wrapper')
+        let products_wrapper = heading_products_wrapper.querySelector('.products_wrapper')
+
+        elem.classList.toggle('not_active_arrow')
+        products_wrapper.classList.toggle('not_active')
+        if (select.classList.contains('select')) {
+            select.classList.remove('select')
+            select.classList.add('not_active')
+            title_heading_wrapper.style.display = 'block'
+        } else {
+            select.classList.remove('not_active')
+            select.classList.add('select')
+            title_heading_wrapper.style.display = 'none'
+        }
+
+    })
+})

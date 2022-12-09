@@ -70,282 +70,382 @@
 <section class="products">
     <div class="container">
         <div class="wrapper">
-            <div class="products_wrapper">
+            <div class="heading_products_wrapper">
                 <h1 class="basket">Корзина</h1>
-                <label class="label_select">
-                    <input type="checkbox" class="checkbox">
-                    <span class="select">Выбрать все</span>
-                    <img class="arrow" src="images/products/arrow.svg" alt="arrow.svg">
-                </label>
+                <div class="heading_wrapper">
+                    <h2 class="title_heading_wrapper">266 товаров · 2 100 569 сом</h2>
+                    <label class="label_select_all">
+                        <input type="checkbox" class="checkbox">
+                        <span class="select">Выбрать все</span>
+                    </label>
+                    <button class="arrow">
+                        <img src="images/products/arrow.svg" alt="arrow.svg">
+                    </button>
+                </div>
                 <div class="line"></div>
-                <div class="product">
-                    <div class="top_product">
-                        <div class="left_side">
-                            <div class="checkbox_wrapper">
-                                <label class="label">
-                                    <input type="checkbox" class="checkbox">
-                                    <span class="select select_menu"></span>
-                                </label>
-                                <img class="product_image" src="images/products/product_1.jpeg" alt="product_1.jpg">
-                                <span class="mobile_params">56</span>
+                <div class="products_wrapper">
+                    <div class="product">
+                        <div class="top_product">
+                            <div class="left_side">
+                                <div class="checkbox_wrapper">
+                                    <label class="label_select">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="select select_menu"></span>
+                                    </label>
+                                    <img class="product_image" src="images/products/product_1.jpeg" alt="product_1.jpg">
+                                    <span class="mobile_params">56</span>
+                                </div>
+                                <div class="description">
+                                    <div class="mobile_price">
+                                        <div class="full_price">
+                                            <h2 class="sum">522 сом</h2>
+                                        </div>
+                                        <div class="discount">
+                                            <div class="discount_text">1051 сом
+                                                <div class="detailed_discount">
+                                                    <div class="main_discount">
+                                                        <span class="percent">Скидка 55%</span>
+                                                        <span class="amount">-300 сом</span>
+                                                    </div>
+                                                    <div class="main_discount">
+                                                        <span class="percent">Скидка 10%</span>
+                                                        <span class="amount">-30 сом</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="name_product">Футболка UZcotton мужская</h4>
+                                    <div class="features">
+                                        <span>Цвет: белый</span>
+                                        <span>Размер: 56</span>
+                                    </div>
+                                    <span class="warehouse">Коледино WB</span>
+                                    <div class="shop_container">
+                                        <span class="shop">OOO Вайлдберриз</span>
+                                        <a href="#">
+                                            <img src="images/products/info.svg" alt="info.svg">
+                                            <span class="info_shop">
+                                            <h4>OOO «Вайлдберриз»</h4>
+                                            <span>ОГРН: 5167746237148</span>
+                                            <p>129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34</p>
+                                        </span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="description">
-                                <div class="mobile_price">
+                            <div class="right_side">
+                                <div class="counter_wrapper">
+                                    <div class="counter">
+                                        <button class="minus">
+                                            <img src="images/products/minus.svg" alt="minus.svg">
+                                        </button>
+                                        <span class="number">1</span>
+                                        <button class="plus">
+                                            <img src="images/products/plus.svg" alt="plus.svg">
+                                        </button>
+                                    </div>
+                                    <p class="remains">Осталось 2 шт.</p>
+                                    <div class="images">
+                                        <svg class="like" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.03399 2.05857C2.26592 2.75224 1.76687 3.83284 1.99496 5.42928C2.22335 7.02783 3.26497 8.68522 4.80439 10.3478C6.25868 11.9184 8.10965 13.4437 9.99999 14.874C11.8903 13.4437 13.7413 11.9184 15.1956 10.3478C16.7351 8.68521 17.7767 7.02783 18.005 5.4293C18.2331 3.83285 17.734 2.75224 16.9659 2.05856C16.1767 1.34572 15.055 1 14 1C12.132 1 11.0924 2.08479 10.5177 2.68443C10.4581 2.7466 10.4035 2.80356 10.3535 2.85355C10.1583 3.04882 9.84169 3.04882 9.64643 2.85355C9.59644 2.80356 9.54185 2.7466 9.48227 2.68443C8.9076 2.08479 7.868 1 5.99999 1C4.94498 1 3.82328 1.34573 3.03399 2.05857ZM2.36374 1.31643C3.37372 0.404274 4.75205 0 5.99999 0C8.07126 0 9.34542 1.11257 9.99999 1.77862C10.6545 1.11257 11.9287 0 14 0C15.2479 0 16.6262 0.404275 17.6362 1.31644C18.6674 2.24776 19.2669 3.66715 18.995 5.5707C18.7233 7.47217 17.515 9.31479 15.9294 11.0272C14.3355 12.7486 12.3064 14.3952 10.3 15.9C10.1222 16.0333 9.87776 16.0333 9.69999 15.9C7.69356 14.3952 5.66446 12.7485 4.07063 11.0272C2.48506 9.31478 1.27668 7.47217 1.00501 5.57072C0.733043 3.66716 1.33253 2.24776 2.36374 1.31643Z"/>
+                                        </svg>
+                                        <svg class="delete active_delete" width="16" height="16" viewBox="0 0 16 16"
+                                             fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H15C15.2761 2.5 15.5 2.72386 15.5 3C15.5 3.27614 15.2761 3.5 15 3.5H1C0.723858 3.5 0.5 3.27614 0.5 3Z"/>
+                                            <path d="M1.4584 2.5H14.5059L13.6411 13.6926C13.5405 14.9947 12.4546 16 11.1486 16H4.84639C3.54299 16 2.45829 14.9986 2.35435 13.6994L1.4584 2.5ZM2.5416 3.5L3.35117 13.6196C3.41353 14.3992 4.06435 15 4.84639 15H11.1486C11.9322 15 12.5837 14.3968 12.6441 13.6155L13.4256 3.5H2.5416Z"/>
+                                            <path d="M11 3.5H5V1.46875C5 0.657582 5.65758 0 6.46875 0H9.53125C10.3424 0 11 0.657582 11 1.46875V3.5ZM6.46875 1C6.20987 1 6 1.20987 6 1.46875V2.5H10V1.46875C10 1.20987 9.79013 1 9.53125 1H6.46875Z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="price">
                                     <div class="full_price">
                                         <h2 class="sum">522 сом</h2>
                                     </div>
                                     <div class="discount">
-                                        <span class="discount_text">1051 сом</span>
+                                        <div class="discount_text">1051 сом
+                                            <div class="detailed_discount">
+                                                <div class="main_discount">
+                                                    <span class="percent">Скидка 55%</span>
+                                                    <span class="amount">-300 сом</span>
+                                                </div>
+                                                <div class="main_discount">
+                                                    <span class="percent">Скидка 10%</span>
+                                                    <span class="amount">-30 сом</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <h4 class="name_product">Футболка UZcotton мужская</h4>
-                                <div class="features">
-                                    <span>Цвет: белый</span>
-                                    <span>Размер: 56</span>
-                                </div>
-                                <span class="warehouse">Коледино WB</span>
-                                <div class="shop_container">
-                                    <span class="shop">OOO Вайлдберриз</span>
-                                    <a href="#"><img src="images/products/info.svg" alt="info.svg"></a>
-                                </div>
                             </div>
                         </div>
-                        <div class="right_side">
-                            <div class="counter_wrapper">
-                                <div class="counter">
-                                    <button class="minus">
-                                        <img src="images/products/minus.svg" alt="minus.svg">
-                                    </button>
-                                    <span class="number">1</span>
-                                    <button class="plus">
-                                        <img src="images/products/plus.svg" alt="plus.svg">
-                                    </button>
-                                </div>
-                                <p class="remains">Осталось 2 шт.</p>
-                                <div class="images">
-                                    <svg class="like" width="20" height="16" viewBox="0 0 20 16" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M3.03399 2.05857C2.26592 2.75224 1.76687 3.83284 1.99496 5.42928C2.22335 7.02783 3.26497 8.68522 4.80439 10.3478C6.25868 11.9184 8.10965 13.4437 9.99999 14.874C11.8903 13.4437 13.7413 11.9184 15.1956 10.3478C16.7351 8.68521 17.7767 7.02783 18.005 5.4293C18.2331 3.83285 17.734 2.75224 16.9659 2.05856C16.1767 1.34572 15.055 1 14 1C12.132 1 11.0924 2.08479 10.5177 2.68443C10.4581 2.7466 10.4035 2.80356 10.3535 2.85355C10.1583 3.04882 9.84169 3.04882 9.64643 2.85355C9.59644 2.80356 9.54185 2.7466 9.48227 2.68443C8.9076 2.08479 7.868 1 5.99999 1C4.94498 1 3.82328 1.34573 3.03399 2.05857ZM2.36374 1.31643C3.37372 0.404274 4.75205 0 5.99999 0C8.07126 0 9.34542 1.11257 9.99999 1.77862C10.6545 1.11257 11.9287 0 14 0C15.2479 0 16.6262 0.404275 17.6362 1.31644C18.6674 2.24776 19.2669 3.66715 18.995 5.5707C18.7233 7.47217 17.515 9.31479 15.9294 11.0272C14.3355 12.7486 12.3064 14.3952 10.3 15.9C10.1222 16.0333 9.87776 16.0333 9.69999 15.9C7.69356 14.3952 5.66446 12.7485 4.07063 11.0272C2.48506 9.31478 1.27668 7.47217 1.00501 5.57072C0.733043 3.66716 1.33253 2.24776 2.36374 1.31643Z"/>
-                                    </svg>
-                                    <svg class="delete active_delete" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H15C15.2761 2.5 15.5 2.72386 15.5 3C15.5 3.27614 15.2761 3.5 15 3.5H1C0.723858 3.5 0.5 3.27614 0.5 3Z"/>
-                                        <path d="M1.4584 2.5H14.5059L13.6411 13.6926C13.5405 14.9947 12.4546 16 11.1486 16H4.84639C3.54299 16 2.45829 14.9986 2.35435 13.6994L1.4584 2.5ZM2.5416 3.5L3.35117 13.6196C3.41353 14.3992 4.06435 15 4.84639 15H11.1486C11.9322 15 12.5837 14.3968 12.6441 13.6155L13.4256 3.5H2.5416Z"/>
-                                        <path d="M11 3.5H5V1.46875C5 0.657582 5.65758 0 6.46875 0H9.53125C10.3424 0 11 0.657582 11 1.46875V3.5ZM6.46875 1C6.20987 1 6 1.20987 6 1.46875V2.5H10V1.46875C10 1.20987 9.79013 1 9.53125 1H6.46875Z"/>
-                                    </svg>
-                                </div>
+                        <div class="bottom_product">
+                            <div class="counter">
+                                <button class="minus">
+                                    <img src="images/products/minus.svg" alt="minus.svg">
+                                </button>
+                                <span class="number">1</span>
+                                <button class="plus">
+                                    <img src="images/products/plus.svg" alt="plus.svg">
+                                </button>
                             </div>
-                            <div class="price">
-                                <div class="full_price">
-                                    <h2 class="sum">522 сом</h2>
-                                </div>
-                                <div class="discount">
-                                    <span class="discount_text">1051 сом</span>
-                                </div>
+                            <p class="remains">Осталось 2 шт.</p>
+                            <div class="images">
+                                <svg class="like" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.03399 2.05857C2.26592 2.75224 1.76687 3.83284 1.99496 5.42928C2.22335 7.02783 3.26497 8.68522 4.80439 10.3478C6.25868 11.9184 8.10965 13.4437 9.99999 14.874C11.8903 13.4437 13.7413 11.9184 15.1956 10.3478C16.7351 8.68521 17.7767 7.02783 18.005 5.4293C18.2331 3.83285 17.734 2.75224 16.9659 2.05856C16.1767 1.34572 15.055 1 14 1C12.132 1 11.0924 2.08479 10.5177 2.68443C10.4581 2.7466 10.4035 2.80356 10.3535 2.85355C10.1583 3.04882 9.84169 3.04882 9.64643 2.85355C9.59644 2.80356 9.54185 2.7466 9.48227 2.68443C8.9076 2.08479 7.868 1 5.99999 1C4.94498 1 3.82328 1.34573 3.03399 2.05857ZM2.36374 1.31643C3.37372 0.404274 4.75205 0 5.99999 0C8.07126 0 9.34542 1.11257 9.99999 1.77862C10.6545 1.11257 11.9287 0 14 0C15.2479 0 16.6262 0.404275 17.6362 1.31644C18.6674 2.24776 19.2669 3.66715 18.995 5.5707C18.7233 7.47217 17.515 9.31479 15.9294 11.0272C14.3355 12.7486 12.3064 14.3952 10.3 15.9C10.1222 16.0333 9.87776 16.0333 9.69999 15.9C7.69356 14.3952 5.66446 12.7485 4.07063 11.0272C2.48506 9.31478 1.27668 7.47217 1.00501 5.57072C0.733043 3.66716 1.33253 2.24776 2.36374 1.31643Z"/>
+                                </svg>
+                                <svg class="delete active_delete" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H15C15.2761 2.5 15.5 2.72386 15.5 3C15.5 3.27614 15.2761 3.5 15 3.5H1C0.723858 3.5 0.5 3.27614 0.5 3Z"/>
+                                    <path d="M1.4584 2.5H14.5059L13.6411 13.6926C13.5405 14.9947 12.4546 16 11.1486 16H4.84639C3.54299 16 2.45829 14.9986 2.35435 13.6994L1.4584 2.5ZM2.5416 3.5L3.35117 13.6196C3.41353 14.3992 4.06435 15 4.84639 15H11.1486C11.9322 15 12.5837 14.3968 12.6441 13.6155L13.4256 3.5H2.5416Z"/>
+                                    <path d="M11 3.5H5V1.46875C5 0.657582 5.65758 0 6.46875 0H9.53125C10.3424 0 11 0.657582 11 1.46875V3.5ZM6.46875 1C6.20987 1 6 1.20987 6 1.46875V2.5H10V1.46875C10 1.20987 9.79013 1 9.53125 1H6.46875Z"/>
+                                </svg>
                             </div>
-                        </div>
-                    </div>
-                    <div class="bottom_product">
-                        <div class="counter">
-                            <button class="minus">
-                                <img src="images/products/minus.svg" alt="minus.svg">
-                            </button>
-                            <span class="number">1</span>
-                            <button class="plus">
-                                <img src="images/products/plus.svg" alt="plus.svg">
-                            </button>
-                        </div>
-                        <p class="remains">Осталось 2 шт.</p>
-                        <div class="images">
-                            <svg class="like" width="20" height="16" viewBox="0 0 20 16" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3.03399 2.05857C2.26592 2.75224 1.76687 3.83284 1.99496 5.42928C2.22335 7.02783 3.26497 8.68522 4.80439 10.3478C6.25868 11.9184 8.10965 13.4437 9.99999 14.874C11.8903 13.4437 13.7413 11.9184 15.1956 10.3478C16.7351 8.68521 17.7767 7.02783 18.005 5.4293C18.2331 3.83285 17.734 2.75224 16.9659 2.05856C16.1767 1.34572 15.055 1 14 1C12.132 1 11.0924 2.08479 10.5177 2.68443C10.4581 2.7466 10.4035 2.80356 10.3535 2.85355C10.1583 3.04882 9.84169 3.04882 9.64643 2.85355C9.59644 2.80356 9.54185 2.7466 9.48227 2.68443C8.9076 2.08479 7.868 1 5.99999 1C4.94498 1 3.82328 1.34573 3.03399 2.05857ZM2.36374 1.31643C3.37372 0.404274 4.75205 0 5.99999 0C8.07126 0 9.34542 1.11257 9.99999 1.77862C10.6545 1.11257 11.9287 0 14 0C15.2479 0 16.6262 0.404275 17.6362 1.31644C18.6674 2.24776 19.2669 3.66715 18.995 5.5707C18.7233 7.47217 17.515 9.31479 15.9294 11.0272C14.3355 12.7486 12.3064 14.3952 10.3 15.9C10.1222 16.0333 9.87776 16.0333 9.69999 15.9C7.69356 14.3952 5.66446 12.7485 4.07063 11.0272C2.48506 9.31478 1.27668 7.47217 1.00501 5.57072C0.733043 3.66716 1.33253 2.24776 2.36374 1.31643Z"/>
-                            </svg>
-                            <svg class="delete active_delete" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H15C15.2761 2.5 15.5 2.72386 15.5 3C15.5 3.27614 15.2761 3.5 15 3.5H1C0.723858 3.5 0.5 3.27614 0.5 3Z"/>
-                                <path d="M1.4584 2.5H14.5059L13.6411 13.6926C13.5405 14.9947 12.4546 16 11.1486 16H4.84639C3.54299 16 2.45829 14.9986 2.35435 13.6994L1.4584 2.5ZM2.5416 3.5L3.35117 13.6196C3.41353 14.3992 4.06435 15 4.84639 15H11.1486C11.9322 15 12.5837 14.3968 12.6441 13.6155L13.4256 3.5H2.5416Z"/>
-                                <path d="M11 3.5H5V1.46875C5 0.657582 5.65758 0 6.46875 0H9.53125C10.3424 0 11 0.657582 11 1.46875V3.5ZM6.46875 1C6.20987 1 6 1.20987 6 1.46875V2.5H10V1.46875C10 1.20987 9.79013 1 9.53125 1H6.46875Z"/>
-                            </svg>
-                        </div>
 
 
+                        </div>
                     </div>
-                </div>
-                <div class="product">
-                    <div class="top_product">
-                        <div class="left_side">
-                            <div class="checkbox_wrapper">
-                                <label class="label">
-                                    <input type="checkbox" class="checkbox">
-                                    <span class="select select_menu"></span>
-                                </label>
-                                <img class="product_image" src="images/products/product_2.jpeg" alt="product_2.jpg">
+                    <div class="product">
+                        <div class="top_product">
+                            <div class="left_side">
+                                <div class="checkbox_wrapper">
+                                    <label class="label_select">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="select select_menu"></span>
+                                    </label>
+                                    <img class="product_image" src="images/products/product_2.jpeg" alt="product_2.jpg">
+                                </div>
+                                <div class="description">
+                                    <div class="mobile_price">
+                                        <div class="full_price">
+                                            <h2 class="sum">2 100 047 сом</h2>
+                                        </div>
+                                        <div class="discount">
+                                            <div class="discount_text">2 300 047 сом
+                                                <div class="detailed_discount">
+                                                    <div class="main_discount">
+                                                        <span class="percent">Скидка 55%</span>
+                                                        <span class="amount">-300 сом</span>
+                                                    </div>
+                                                    <div class="main_discount">
+                                                        <span class="percent">Скидка 10%</span>
+                                                        <span class="amount">-30 сом</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="name_product">Силиконовый чехол картхолдер (отверстия) для карт,
+                                        прозрачный
+                                        кейс бампер на Apple iPhone XR, MobiSafe</h4>
+                                    <div class="features">
+                                        <span>Цвет: прозрачный</span>
+                                    </div>
+                                    <span class="warehouse">Коледино WB</span>
+                                    <div class="shop_container">
+                                        <span class="shop">OOO МЕГАПРОФСТИЛЬ</span>
+                                        <a href="#">
+                                            <img src="images/products/info.svg" alt="info.svg">
+                                            <span class="info_shop">
+                                            <h4>OOO «МЕГАПРОФСТИЛЬ»</h4>
+                                            <span>ОГРН: 5167746237148</span>
+                                            <p>129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34</p>
+                                        </span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="description">
-                                <div class="mobile_price">
+                            <div class="right_side">
+                                <div class="counter_wrapper">
+                                    <div class="counter">
+                                        <button class="minus">
+                                            <img src="images/products/minus.svg" alt="minus.svg">
+                                        </button>
+                                        <span class="number">255</span>
+                                        <button class="plus">
+                                            <img src="images/products/plus.svg" alt="plus.svg">
+                                        </button>
+                                    </div>
+                                    <p class="remains"></p>
+                                    <div class="images">
+                                        <svg class="like" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.03399 2.05857C2.26592 2.75224 1.76687 3.83284 1.99496 5.42928C2.22335 7.02783 3.26497 8.68522 4.80439 10.3478C6.25868 11.9184 8.10965 13.4437 9.99999 14.874C11.8903 13.4437 13.7413 11.9184 15.1956 10.3478C16.7351 8.68521 17.7767 7.02783 18.005 5.4293C18.2331 3.83285 17.734 2.75224 16.9659 2.05856C16.1767 1.34572 15.055 1 14 1C12.132 1 11.0924 2.08479 10.5177 2.68443C10.4581 2.7466 10.4035 2.80356 10.3535 2.85355C10.1583 3.04882 9.84169 3.04882 9.64643 2.85355C9.59644 2.80356 9.54185 2.7466 9.48227 2.68443C8.9076 2.08479 7.868 1 5.99999 1C4.94498 1 3.82328 1.34573 3.03399 2.05857ZM2.36374 1.31643C3.37372 0.404274 4.75205 0 5.99999 0C8.07126 0 9.34542 1.11257 9.99999 1.77862C10.6545 1.11257 11.9287 0 14 0C15.2479 0 16.6262 0.404275 17.6362 1.31644C18.6674 2.24776 19.2669 3.66715 18.995 5.5707C18.7233 7.47217 17.515 9.31479 15.9294 11.0272C14.3355 12.7486 12.3064 14.3952 10.3 15.9C10.1222 16.0333 9.87776 16.0333 9.69999 15.9C7.69356 14.3952 5.66446 12.7485 4.07063 11.0272C2.48506 9.31478 1.27668 7.47217 1.00501 5.57072C0.733043 3.66716 1.33253 2.24776 2.36374 1.31643Z"/>
+                                        </svg>
+                                        <svg class="delete active_delete" width="16" height="16" viewBox="0 0 16 16"
+                                             fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H15C15.2761 2.5 15.5 2.72386 15.5 3C15.5 3.27614 15.2761 3.5 15 3.5H1C0.723858 3.5 0.5 3.27614 0.5 3Z"/>
+                                            <path d="M1.4584 2.5H14.5059L13.6411 13.6926C13.5405 14.9947 12.4546 16 11.1486 16H4.84639C3.54299 16 2.45829 14.9986 2.35435 13.6994L1.4584 2.5ZM2.5416 3.5L3.35117 13.6196C3.41353 14.3992 4.06435 15 4.84639 15H11.1486C11.9322 15 12.5837 14.3968 12.6441 13.6155L13.4256 3.5H2.5416Z"/>
+                                            <path d="M11 3.5H5V1.46875C5 0.657582 5.65758 0 6.46875 0H9.53125C10.3424 0 11 0.657582 11 1.46875V3.5ZM6.46875 1C6.20987 1 6 1.20987 6 1.46875V2.5H10V1.46875C10 1.20987 9.79013 1 9.53125 1H6.46875Z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="price">
                                     <div class="full_price">
                                         <h2 class="sum">2 100 047 сом</h2>
                                     </div>
                                     <div class="discount">
-                                        <span class="discount_text">2 300 047 сом</span>
+                                        <div class="discount_text">2 300 047 сом
+                                            <div class="detailed_discount">
+                                                <div class="main_discount">
+                                                    <span class="percent">Скидка 55%</span>
+                                                    <span class="amount">-300 сом</span>
+                                                </div>
+                                                <div class="main_discount">
+                                                    <span class="percent">Скидка 10%</span>
+                                                    <span class="amount">-30 сом</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <h4 class="name_product">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный
-                                    кейс бампер на Apple iPhone XR, MobiSafe</h4>
-                                <div class="features">
-                                    <span>Цвет: прозрачный</span>
-                                </div>
-                                <span class="warehouse">Коледино WB</span>
-                                <div class="shop_container">
-                                    <span class="shop">OOO Вайлдберриз</span>
-                                    <a href="#"><img src="images/products/info.svg" alt="info.svg"></a>
-                                </div>
                             </div>
                         </div>
-                        <div class="right_side">
-                            <div class="counter_wrapper">
-                                <div class="counter">
-                                    <button class="minus">
-                                        <img src="images/products/minus.svg" alt="minus.svg">
-                                    </button>
-                                    <span class="number">255</span>
-                                    <button class="plus">
-                                        <img src="images/products/plus.svg" alt="plus.svg">
-                                    </button>
-                                </div>
-                                <p class="remains"></p>
-                                <div class="images">
-                                    <svg class="like" width="20" height="16" viewBox="0 0 20 16" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M3.03399 2.05857C2.26592 2.75224 1.76687 3.83284 1.99496 5.42928C2.22335 7.02783 3.26497 8.68522 4.80439 10.3478C6.25868 11.9184 8.10965 13.4437 9.99999 14.874C11.8903 13.4437 13.7413 11.9184 15.1956 10.3478C16.7351 8.68521 17.7767 7.02783 18.005 5.4293C18.2331 3.83285 17.734 2.75224 16.9659 2.05856C16.1767 1.34572 15.055 1 14 1C12.132 1 11.0924 2.08479 10.5177 2.68443C10.4581 2.7466 10.4035 2.80356 10.3535 2.85355C10.1583 3.04882 9.84169 3.04882 9.64643 2.85355C9.59644 2.80356 9.54185 2.7466 9.48227 2.68443C8.9076 2.08479 7.868 1 5.99999 1C4.94498 1 3.82328 1.34573 3.03399 2.05857ZM2.36374 1.31643C3.37372 0.404274 4.75205 0 5.99999 0C8.07126 0 9.34542 1.11257 9.99999 1.77862C10.6545 1.11257 11.9287 0 14 0C15.2479 0 16.6262 0.404275 17.6362 1.31644C18.6674 2.24776 19.2669 3.66715 18.995 5.5707C18.7233 7.47217 17.515 9.31479 15.9294 11.0272C14.3355 12.7486 12.3064 14.3952 10.3 15.9C10.1222 16.0333 9.87776 16.0333 9.69999 15.9C7.69356 14.3952 5.66446 12.7485 4.07063 11.0272C2.48506 9.31478 1.27668 7.47217 1.00501 5.57072C0.733043 3.66716 1.33253 2.24776 2.36374 1.31643Z"/>
-                                    </svg>
-                                    <svg class="delete active_delete" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H15C15.2761 2.5 15.5 2.72386 15.5 3C15.5 3.27614 15.2761 3.5 15 3.5H1C0.723858 3.5 0.5 3.27614 0.5 3Z"/>
-                                        <path d="M1.4584 2.5H14.5059L13.6411 13.6926C13.5405 14.9947 12.4546 16 11.1486 16H4.84639C3.54299 16 2.45829 14.9986 2.35435 13.6994L1.4584 2.5ZM2.5416 3.5L3.35117 13.6196C3.41353 14.3992 4.06435 15 4.84639 15H11.1486C11.9322 15 12.5837 14.3968 12.6441 13.6155L13.4256 3.5H2.5416Z"/>
-                                        <path d="M11 3.5H5V1.46875C5 0.657582 5.65758 0 6.46875 0H9.53125C10.3424 0 11 0.657582 11 1.46875V3.5ZM6.46875 1C6.20987 1 6 1.20987 6 1.46875V2.5H10V1.46875C10 1.20987 9.79013 1 9.53125 1H6.46875Z"/>
-                                    </svg>
-                                </div>
+                        <div class="bottom_product">
+                            <div class="counter">
+                                <button class="minus">
+                                    <img src="images/products/minus.svg" alt="minus.svg">
+                                </button>
+                                <span class="number">255</span>
+                                <button class="plus">
+                                    <img src="images/products/plus.svg" alt="plus.svg">
+                                </button>
                             </div>
-                            <div class="price">
-                                <div class="full_price">
-                                    <h2 class="sum">2 100 047 сом</h2>
-                                </div>
-                                <div class="discount">
-                                    <span class="discount_text">2 300 047 сом</span>
-                                </div>
+                            <div class="images">
+                                <svg class="like" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.03399 2.05857C2.26592 2.75224 1.76687 3.83284 1.99496 5.42928C2.22335 7.02783 3.26497 8.68522 4.80439 10.3478C6.25868 11.9184 8.10965 13.4437 9.99999 14.874C11.8903 13.4437 13.7413 11.9184 15.1956 10.3478C16.7351 8.68521 17.7767 7.02783 18.005 5.4293C18.2331 3.83285 17.734 2.75224 16.9659 2.05856C16.1767 1.34572 15.055 1 14 1C12.132 1 11.0924 2.08479 10.5177 2.68443C10.4581 2.7466 10.4035 2.80356 10.3535 2.85355C10.1583 3.04882 9.84169 3.04882 9.64643 2.85355C9.59644 2.80356 9.54185 2.7466 9.48227 2.68443C8.9076 2.08479 7.868 1 5.99999 1C4.94498 1 3.82328 1.34573 3.03399 2.05857ZM2.36374 1.31643C3.37372 0.404274 4.75205 0 5.99999 0C8.07126 0 9.34542 1.11257 9.99999 1.77862C10.6545 1.11257 11.9287 0 14 0C15.2479 0 16.6262 0.404275 17.6362 1.31644C18.6674 2.24776 19.2669 3.66715 18.995 5.5707C18.7233 7.47217 17.515 9.31479 15.9294 11.0272C14.3355 12.7486 12.3064 14.3952 10.3 15.9C10.1222 16.0333 9.87776 16.0333 9.69999 15.9C7.69356 14.3952 5.66446 12.7485 4.07063 11.0272C2.48506 9.31478 1.27668 7.47217 1.00501 5.57072C0.733043 3.66716 1.33253 2.24776 2.36374 1.31643Z"/>
+                                </svg>
+                                <svg class="delete active_delete" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H15C15.2761 2.5 15.5 2.72386 15.5 3C15.5 3.27614 15.2761 3.5 15 3.5H1C0.723858 3.5 0.5 3.27614 0.5 3Z"/>
+                                    <path d="M1.4584 2.5H14.5059L13.6411 13.6926C13.5405 14.9947 12.4546 16 11.1486 16H4.84639C3.54299 16 2.45829 14.9986 2.35435 13.6994L1.4584 2.5ZM2.5416 3.5L3.35117 13.6196C3.41353 14.3992 4.06435 15 4.84639 15H11.1486C11.9322 15 12.5837 14.3968 12.6441 13.6155L13.4256 3.5H2.5416Z"/>
+                                    <path d="M11 3.5H5V1.46875C5 0.657582 5.65758 0 6.46875 0H9.53125C10.3424 0 11 0.657582 11 1.46875V3.5ZM6.46875 1C6.20987 1 6 1.20987 6 1.46875V2.5H10V1.46875C10 1.20987 9.79013 1 9.53125 1H6.46875Z"/>
+                                </svg>
                             </div>
                         </div>
                     </div>
-                    <div class="bottom_product">
-                        <div class="counter">
-                            <button class="minus">
-                                <img src="images/products/minus.svg" alt="minus.svg">
-                            </button>
-                            <span class="number">255</span>
-                            <button class="plus">
-                                <img src="images/products/plus.svg" alt="plus.svg">
-                            </button>
-                        </div>
-                        <div class="images">
-                            <svg class="like" width="20" height="16" viewBox="0 0 20 16" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3.03399 2.05857C2.26592 2.75224 1.76687 3.83284 1.99496 5.42928C2.22335 7.02783 3.26497 8.68522 4.80439 10.3478C6.25868 11.9184 8.10965 13.4437 9.99999 14.874C11.8903 13.4437 13.7413 11.9184 15.1956 10.3478C16.7351 8.68521 17.7767 7.02783 18.005 5.4293C18.2331 3.83285 17.734 2.75224 16.9659 2.05856C16.1767 1.34572 15.055 1 14 1C12.132 1 11.0924 2.08479 10.5177 2.68443C10.4581 2.7466 10.4035 2.80356 10.3535 2.85355C10.1583 3.04882 9.84169 3.04882 9.64643 2.85355C9.59644 2.80356 9.54185 2.7466 9.48227 2.68443C8.9076 2.08479 7.868 1 5.99999 1C4.94498 1 3.82328 1.34573 3.03399 2.05857ZM2.36374 1.31643C3.37372 0.404274 4.75205 0 5.99999 0C8.07126 0 9.34542 1.11257 9.99999 1.77862C10.6545 1.11257 11.9287 0 14 0C15.2479 0 16.6262 0.404275 17.6362 1.31644C18.6674 2.24776 19.2669 3.66715 18.995 5.5707C18.7233 7.47217 17.515 9.31479 15.9294 11.0272C14.3355 12.7486 12.3064 14.3952 10.3 15.9C10.1222 16.0333 9.87776 16.0333 9.69999 15.9C7.69356 14.3952 5.66446 12.7485 4.07063 11.0272C2.48506 9.31478 1.27668 7.47217 1.00501 5.57072C0.733043 3.66716 1.33253 2.24776 2.36374 1.31643Z"/>
-                            </svg>
-                            <svg class="delete active_delete" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H15C15.2761 2.5 15.5 2.72386 15.5 3C15.5 3.27614 15.2761 3.5 15 3.5H1C0.723858 3.5 0.5 3.27614 0.5 3Z"/>
-                                <path d="M1.4584 2.5H14.5059L13.6411 13.6926C13.5405 14.9947 12.4546 16 11.1486 16H4.84639C3.54299 16 2.45829 14.9986 2.35435 13.6994L1.4584 2.5ZM2.5416 3.5L3.35117 13.6196C3.41353 14.3992 4.06435 15 4.84639 15H11.1486C11.9322 15 12.5837 14.3968 12.6441 13.6155L13.4256 3.5H2.5416Z"/>
-                                <path d="M11 3.5H5V1.46875C5 0.657582 5.65758 0 6.46875 0H9.53125C10.3424 0 11 0.657582 11 1.46875V3.5ZM6.46875 1C6.20987 1 6 1.20987 6 1.46875V2.5H10V1.46875C10 1.20987 9.79013 1 9.53125 1H6.46875Z"/>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="top_product">
-                        <div class="left_side">
-                            <div class="checkbox_wrapper">
-                                <label class="label">
-                                    <input type="checkbox" class="checkbox">
-                                    <span class="select select_menu"></span>
-                                </label>
-                                <img class="product_image" src="images/products/product_3.jpeg" alt="product_3.jpg">
+                    <div class="product">
+                        <div class="top_product">
+                            <div class="left_side">
+                                <div class="checkbox_wrapper">
+                                    <label class="label_select">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="select select_menu"></span>
+                                    </label>
+                                    <img class="product_image" src="images/products/product_3.jpeg" alt="product_3.jpg">
+                                </div>
+                                <div class="description">
+                                    <div class="mobile_price">
+                                        <div class="full_price">
+                                            <h2 class="sum">494 сом</h2>
+                                        </div>
+                                        <div class="discount">
+                                            <div class="discount_text">950 сом
+                                                <div class="detailed_discount">
+                                                    <div class="main_discount">
+                                                        <span class="percent">Скидка 55%</span>
+                                                        <span class="amount">-300 сом</span>
+                                                    </div>
+                                                    <div class="main_discount">
+                                                        <span class="percent">Скидка 10%</span>
+                                                        <span class="amount">-30 сом</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="name_product">Карандаши цветные Faber-Castell "Замок", набор 24
+                                        цв...</h4>
+                                    <span class="warehouse">Коледино WB</span>
+                                    <div class="shop_container">
+                                        <span class="shop">OOO Вайлдберриз</span>
+                                        <a href="#">
+                                            <img class="shop_container_img" src="images/products/info.svg"
+                                                 alt="info.svg">
+                                            <span class="info_shop">
+                                            <h4>OOO «Вайлдберриз»</h4>
+                                            <span>ОГРН: 5167746237148</span>
+                                            <p>129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34</p>
+                                        </span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="description">
-                                <div class="mobile_price">
+                            <div class="right_side">
+                                <div class="counter_wrapper">
+                                    <div class="counter">
+                                        <button class="minus">
+                                            <img src="images/products/minus.svg" alt="minus.svg">
+                                        </button>
+                                        <span class="number">2</span>
+                                        <button class="plus">
+                                            <img src="images/products/plus.svg" alt="plus.svg">
+                                        </button>
+                                    </div>
+                                    <p class="remains">Осталось 2 шт.</p>
+                                    <div class="images">
+                                        <svg class="like" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.03399 2.05857C2.26592 2.75224 1.76687 3.83284 1.99496 5.42928C2.22335 7.02783 3.26497 8.68522 4.80439 10.3478C6.25868 11.9184 8.10965 13.4437 9.99999 14.874C11.8903 13.4437 13.7413 11.9184 15.1956 10.3478C16.7351 8.68521 17.7767 7.02783 18.005 5.4293C18.2331 3.83285 17.734 2.75224 16.9659 2.05856C16.1767 1.34572 15.055 1 14 1C12.132 1 11.0924 2.08479 10.5177 2.68443C10.4581 2.7466 10.4035 2.80356 10.3535 2.85355C10.1583 3.04882 9.84169 3.04882 9.64643 2.85355C9.59644 2.80356 9.54185 2.7466 9.48227 2.68443C8.9076 2.08479 7.868 1 5.99999 1C4.94498 1 3.82328 1.34573 3.03399 2.05857ZM2.36374 1.31643C3.37372 0.404274 4.75205 0 5.99999 0C8.07126 0 9.34542 1.11257 9.99999 1.77862C10.6545 1.11257 11.9287 0 14 0C15.2479 0 16.6262 0.404275 17.6362 1.31644C18.6674 2.24776 19.2669 3.66715 18.995 5.5707C18.7233 7.47217 17.515 9.31479 15.9294 11.0272C14.3355 12.7486 12.3064 14.3952 10.3 15.9C10.1222 16.0333 9.87776 16.0333 9.69999 15.9C7.69356 14.3952 5.66446 12.7485 4.07063 11.0272C2.48506 9.31478 1.27668 7.47217 1.00501 5.57072C0.733043 3.66716 1.33253 2.24776 2.36374 1.31643Z"/>
+                                        </svg>
+                                        <svg class="delete active_delete" width="16" height="16" viewBox="0 0 16 16"
+                                             fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H15C15.2761 2.5 15.5 2.72386 15.5 3C15.5 3.27614 15.2761 3.5 15 3.5H1C0.723858 3.5 0.5 3.27614 0.5 3Z"/>
+                                            <path d="M1.4584 2.5H14.5059L13.6411 13.6926C13.5405 14.9947 12.4546 16 11.1486 16H4.84639C3.54299 16 2.45829 14.9986 2.35435 13.6994L1.4584 2.5ZM2.5416 3.5L3.35117 13.6196C3.41353 14.3992 4.06435 15 4.84639 15H11.1486C11.9322 15 12.5837 14.3968 12.6441 13.6155L13.4256 3.5H2.5416Z"/>
+                                            <path d="M11 3.5H5V1.46875C5 0.657582 5.65758 0 6.46875 0H9.53125C10.3424 0 11 0.657582 11 1.46875V3.5ZM6.46875 1C6.20987 1 6 1.20987 6 1.46875V2.5H10V1.46875C10 1.20987 9.79013 1 9.53125 1H6.46875Z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="price">
                                     <div class="full_price">
                                         <h2 class="sum">494 сом</h2>
                                     </div>
                                     <div class="discount">
-                                        <span class="discount_text">950 сом</span>
+                                        <div class="discount_text">950 сом
+                                            <div class="detailed_discount">
+                                                <div class="main_discount">
+                                                    <span class="percent">Скидка 55%</span>
+                                                    <span class="amount">-300 сом</span>
+                                                </div>
+                                                <div class="main_discount">
+                                                    <span class="percent">Скидка 10%</span>
+                                                    <span class="amount">-30 сом</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <h4 class="name_product">Карандаши цветные Faber-Castell "Замок", набор 24 цв...</h4>
-                                <span class="warehouse">Коледино WB</span>
-                                <div class="shop_container">
-                                    <span class="shop">OOO Вайлдберриз</span>
-                                    <a href="#"><img src="images/products/info.svg" alt="info.svg"></a>
-                                </div>
                             </div>
                         </div>
-                        <div class="right_side">
-                            <div class="counter_wrapper">
-                                <div class="counter">
-                                    <button class="minus">
-                                        <img src="images/products/minus.svg" alt="minus.svg">
-                                    </button>
-                                    <span class="number">2</span>
-                                    <button class="plus">
-                                        <img src="images/products/plus.svg" alt="plus.svg">
-                                    </button>
-                                </div>
-                                <p class="remains">Осталось 2 шт.</p>
-                                <div class="images">
-                                    <svg class="like" width="20" height="16" viewBox="0 0 20 16" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M3.03399 2.05857C2.26592 2.75224 1.76687 3.83284 1.99496 5.42928C2.22335 7.02783 3.26497 8.68522 4.80439 10.3478C6.25868 11.9184 8.10965 13.4437 9.99999 14.874C11.8903 13.4437 13.7413 11.9184 15.1956 10.3478C16.7351 8.68521 17.7767 7.02783 18.005 5.4293C18.2331 3.83285 17.734 2.75224 16.9659 2.05856C16.1767 1.34572 15.055 1 14 1C12.132 1 11.0924 2.08479 10.5177 2.68443C10.4581 2.7466 10.4035 2.80356 10.3535 2.85355C10.1583 3.04882 9.84169 3.04882 9.64643 2.85355C9.59644 2.80356 9.54185 2.7466 9.48227 2.68443C8.9076 2.08479 7.868 1 5.99999 1C4.94498 1 3.82328 1.34573 3.03399 2.05857ZM2.36374 1.31643C3.37372 0.404274 4.75205 0 5.99999 0C8.07126 0 9.34542 1.11257 9.99999 1.77862C10.6545 1.11257 11.9287 0 14 0C15.2479 0 16.6262 0.404275 17.6362 1.31644C18.6674 2.24776 19.2669 3.66715 18.995 5.5707C18.7233 7.47217 17.515 9.31479 15.9294 11.0272C14.3355 12.7486 12.3064 14.3952 10.3 15.9C10.1222 16.0333 9.87776 16.0333 9.69999 15.9C7.69356 14.3952 5.66446 12.7485 4.07063 11.0272C2.48506 9.31478 1.27668 7.47217 1.00501 5.57072C0.733043 3.66716 1.33253 2.24776 2.36374 1.31643Z"/>
-                                    </svg>
-                                    <svg class="delete active_delete" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H15C15.2761 2.5 15.5 2.72386 15.5 3C15.5 3.27614 15.2761 3.5 15 3.5H1C0.723858 3.5 0.5 3.27614 0.5 3Z"/>
-                                        <path d="M1.4584 2.5H14.5059L13.6411 13.6926C13.5405 14.9947 12.4546 16 11.1486 16H4.84639C3.54299 16 2.45829 14.9986 2.35435 13.6994L1.4584 2.5ZM2.5416 3.5L3.35117 13.6196C3.41353 14.3992 4.06435 15 4.84639 15H11.1486C11.9322 15 12.5837 14.3968 12.6441 13.6155L13.4256 3.5H2.5416Z"/>
-                                        <path d="M11 3.5H5V1.46875C5 0.657582 5.65758 0 6.46875 0H9.53125C10.3424 0 11 0.657582 11 1.46875V3.5ZM6.46875 1C6.20987 1 6 1.20987 6 1.46875V2.5H10V1.46875C10 1.20987 9.79013 1 9.53125 1H6.46875Z"/>
-                                    </svg>
-                                </div>
+                        <div class="bottom_product">
+                            <div class="counter">
+                                <button class="minus">
+                                    <img src="images/products/minus.svg" alt="minus.svg">
+                                </button>
+                                <span class="number">2</span>
+                                <button class="plus">
+                                    <img src="images/products/plus.svg" alt="plus.svg">
+                                </button>
                             </div>
-                            <div class="price">
-                                <div class="full_price">
-                                    <h2 class="sum">494 сом</h2>
-                                </div>
-                                <div class="discount">
-                                    <span class="discount_text">950 сом</span>
-                                </div>
+                            <p class="remains">Осталось 2 шт.</p>
+                            <div class="images">
+                                <svg class="like" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.03399 2.05857C2.26592 2.75224 1.76687 3.83284 1.99496 5.42928C2.22335 7.02783 3.26497 8.68522 4.80439 10.3478C6.25868 11.9184 8.10965 13.4437 9.99999 14.874C11.8903 13.4437 13.7413 11.9184 15.1956 10.3478C16.7351 8.68521 17.7767 7.02783 18.005 5.4293C18.2331 3.83285 17.734 2.75224 16.9659 2.05856C16.1767 1.34572 15.055 1 14 1C12.132 1 11.0924 2.08479 10.5177 2.68443C10.4581 2.7466 10.4035 2.80356 10.3535 2.85355C10.1583 3.04882 9.84169 3.04882 9.64643 2.85355C9.59644 2.80356 9.54185 2.7466 9.48227 2.68443C8.9076 2.08479 7.868 1 5.99999 1C4.94498 1 3.82328 1.34573 3.03399 2.05857ZM2.36374 1.31643C3.37372 0.404274 4.75205 0 5.99999 0C8.07126 0 9.34542 1.11257 9.99999 1.77862C10.6545 1.11257 11.9287 0 14 0C15.2479 0 16.6262 0.404275 17.6362 1.31644C18.6674 2.24776 19.2669 3.66715 18.995 5.5707C18.7233 7.47217 17.515 9.31479 15.9294 11.0272C14.3355 12.7486 12.3064 14.3952 10.3 15.9C10.1222 16.0333 9.87776 16.0333 9.69999 15.9C7.69356 14.3952 5.66446 12.7485 4.07063 11.0272C2.48506 9.31478 1.27668 7.47217 1.00501 5.57072C0.733043 3.66716 1.33253 2.24776 2.36374 1.31643Z"/>
+                                </svg>
+                                <svg class="delete active_delete" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H15C15.2761 2.5 15.5 2.72386 15.5 3C15.5 3.27614 15.2761 3.5 15 3.5H1C0.723858 3.5 0.5 3.27614 0.5 3Z"/>
+                                    <path d="M1.4584 2.5H14.5059L13.6411 13.6926C13.5405 14.9947 12.4546 16 11.1486 16H4.84639C3.54299 16 2.45829 14.9986 2.35435 13.6994L1.4584 2.5ZM2.5416 3.5L3.35117 13.6196C3.41353 14.3992 4.06435 15 4.84639 15H11.1486C11.9322 15 12.5837 14.3968 12.6441 13.6155L13.4256 3.5H2.5416Z"/>
+                                    <path d="M11 3.5H5V1.46875C5 0.657582 5.65758 0 6.46875 0H9.53125C10.3424 0 11 0.657582 11 1.46875V3.5ZM6.46875 1C6.20987 1 6 1.20987 6 1.46875V2.5H10V1.46875C10 1.20987 9.79013 1 9.53125 1H6.46875Z"/>
+                                </svg>
                             </div>
-                        </div>
-                    </div>
-                    <div class="bottom_product">
-                        <div class="counter">
-                            <button class="minus">
-                                <img src="images/products/minus.svg" alt="minus.svg">
-                            </button>
-                            <span class="number">2</span>
-                            <button class="plus">
-                                <img src="images/products/plus.svg" alt="plus.svg">
-                            </button>
-                        </div>
-                        <p class="remains">Осталось 2 шт.</p>
-                        <div class="images">
-                            <svg class="like" width="20" height="16" viewBox="0 0 20 16" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3.03399 2.05857C2.26592 2.75224 1.76687 3.83284 1.99496 5.42928C2.22335 7.02783 3.26497 8.68522 4.80439 10.3478C6.25868 11.9184 8.10965 13.4437 9.99999 14.874C11.8903 13.4437 13.7413 11.9184 15.1956 10.3478C16.7351 8.68521 17.7767 7.02783 18.005 5.4293C18.2331 3.83285 17.734 2.75224 16.9659 2.05856C16.1767 1.34572 15.055 1 14 1C12.132 1 11.0924 2.08479 10.5177 2.68443C10.4581 2.7466 10.4035 2.80356 10.3535 2.85355C10.1583 3.04882 9.84169 3.04882 9.64643 2.85355C9.59644 2.80356 9.54185 2.7466 9.48227 2.68443C8.9076 2.08479 7.868 1 5.99999 1C4.94498 1 3.82328 1.34573 3.03399 2.05857ZM2.36374 1.31643C3.37372 0.404274 4.75205 0 5.99999 0C8.07126 0 9.34542 1.11257 9.99999 1.77862C10.6545 1.11257 11.9287 0 14 0C15.2479 0 16.6262 0.404275 17.6362 1.31644C18.6674 2.24776 19.2669 3.66715 18.995 5.5707C18.7233 7.47217 17.515 9.31479 15.9294 11.0272C14.3355 12.7486 12.3064 14.3952 10.3 15.9C10.1222 16.0333 9.87776 16.0333 9.69999 15.9C7.69356 14.3952 5.66446 12.7485 4.07063 11.0272C2.48506 9.31478 1.27668 7.47217 1.00501 5.57072C0.733043 3.66716 1.33253 2.24776 2.36374 1.31643Z"/>
-                            </svg>
-                            <svg class="delete active_delete" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H15C15.2761 2.5 15.5 2.72386 15.5 3C15.5 3.27614 15.2761 3.5 15 3.5H1C0.723858 3.5 0.5 3.27614 0.5 3Z"/>
-                                <path d="M1.4584 2.5H14.5059L13.6411 13.6926C13.5405 14.9947 12.4546 16 11.1486 16H4.84639C3.54299 16 2.45829 14.9986 2.35435 13.6994L1.4584 2.5ZM2.5416 3.5L3.35117 13.6196C3.41353 14.3992 4.06435 15 4.84639 15H11.1486C11.9322 15 12.5837 14.3968 12.6441 13.6155L13.4256 3.5H2.5416Z"/>
-                                <path d="M11 3.5H5V1.46875C5 0.657582 5.65758 0 6.46875 0H9.53125C10.3424 0 11 0.657582 11 1.46875V3.5ZM6.46875 1C6.20987 1 6 1.20987 6 1.46875V2.5H10V1.46875C10 1.20987 9.79013 1 9.53125 1H6.46875Z"/>
-                            </svg>
                         </div>
                     </div>
                 </div>
@@ -381,9 +481,13 @@
                     <span class="date">5–8 фев</span>
                     <div class="back_delivery">
                         <img src="images/cheque/price_shipping_icon.svg" alt="price_shipping_icon.svg">
-                        <p>Обратная доставка товаров на склад при отказе —
-                            <span>бесплатно</span>
-                        </p>
+                        <div class="terms">Обратная доставка товаров на склад при отказе —
+                            <div class="back_delivery_word">бесплатно
+                                <div class="free_delivery_terms">
+                                    <p>Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="payment">
@@ -396,7 +500,7 @@
                         <span class="number">1234 12•• •••• 1234</span>
                     </div>
                     <div class="write-down">
-                        <label class="label">
+                        <label class="label_cheque">
                             <input type="checkbox" class="checkbox">
                             <span class="select select_cheque">Списать оплату сразу</span>
                         </label>
@@ -411,8 +515,8 @@
                     </button>
                     <div class="agreement">
                         <img src="images/cheque/black_checkmark.svg" alt="black_checkmark.svg">
-                        <p>Соглашаюсь <span class="rules">с правилами пользования торговой площадкой</span><br/>и <span
-                                class="rules">возврата</span></p>
+                        <p>Соглашаюсь <span class="rules">с правилами пользования торговой площадкой</span><br/>и
+                            <span class="rules">возврата</span></p>
                     </div>
                 </div>
             </div>
@@ -424,88 +528,93 @@
 <!--missing_products-->
 <section class="missing_products">
     <div class="container">
-        <div class="missing_products_wrapper">
+        <div class="heading_products_wrapper">
             <div class="missing_heading_wrapper">
                 <h2 class="missing_heading">Отсутствуют · 3 товара</h2>
-                <img class="arrow" src="images/products/arrow.svg" alt="arrow.svg">
+                <button class="arrow">
+                    <img src="images/products/arrow.svg" alt="arrow.svg">
+                </button>
             </div>
             <div class="line"></div>
-            <div class="product grey_product">
-                <div class="left_side">
-                    <div class="image_grey_wrapper">
-                        <img class="product_image_grey" src="images/products/product_1.jpeg" alt="product_1.jpg">
-                        <span class="mobile_params">56</span>
+            <div class="products_wrapper">
+                <div class="product grey_product">
+                    <div class="left_side">
+                        <div class="image_grey_wrapper">
+                            <img class="product_image_grey" src="images/products/product_1.jpeg" alt="product_1.jpg">
+                            <span class="mobile_params">56</span>
+                        </div>
+                        <div class="description">
+                            <h4 class="name_product_grey">Футболка UZcotton мужская</h4>
+                            <div class="features_grey">
+                                <span>Цвет: белый</span>
+                                <span>Размер: 56</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="description">
-                        <h4 class="name_product_grey">Футболка UZcotton мужская</h4>
-                        <div class="features_grey">
-                            <span>Цвет: белый</span>
-                            <span>Размер: 56</span>
+                    <div class="right_side_grey">
+                        <div class="images">
+                            <svg class="like" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.03399 2.05857C2.26592 2.75224 1.76687 3.83284 1.99496 5.42928C2.22335 7.02783 3.26497 8.68522 4.80439 10.3478C6.25868 11.9184 8.10965 13.4437 9.99999 14.874C11.8903 13.4437 13.7413 11.9184 15.1956 10.3478C16.7351 8.68521 17.7767 7.02783 18.005 5.4293C18.2331 3.83285 17.734 2.75224 16.9659 2.05856C16.1767 1.34572 15.055 1 14 1C12.132 1 11.0924 2.08479 10.5177 2.68443C10.4581 2.7466 10.4035 2.80356 10.3535 2.85355C10.1583 3.04882 9.84169 3.04882 9.64643 2.85355C9.59644 2.80356 9.54185 2.7466 9.48227 2.68443C8.9076 2.08479 7.868 1 5.99999 1C4.94498 1 3.82328 1.34573 3.03399 2.05857ZM2.36374 1.31643C3.37372 0.404274 4.75205 0 5.99999 0C8.07126 0 9.34542 1.11257 9.99999 1.77862C10.6545 1.11257 11.9287 0 14 0C15.2479 0 16.6262 0.404275 17.6362 1.31644C18.6674 2.24776 19.2669 3.66715 18.995 5.5707C18.7233 7.47217 17.515 9.31479 15.9294 11.0272C14.3355 12.7486 12.3064 14.3952 10.3 15.9C10.1222 16.0333 9.87776 16.0333 9.69999 15.9C7.69356 14.3952 5.66446 12.7485 4.07063 11.0272C2.48506 9.31478 1.27668 7.47217 1.00501 5.57072C0.733043 3.66716 1.33253 2.24776 2.36374 1.31643Z"/>
+                            </svg>
+                            <svg class="delete" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H15C15.2761 2.5 15.5 2.72386 15.5 3C15.5 3.27614 15.2761 3.5 15 3.5H1C0.723858 3.5 0.5 3.27614 0.5 3Z"/>
+                                <path d="M1.4584 2.5H14.5059L13.6411 13.6926C13.5405 14.9947 12.4546 16 11.1486 16H4.84639C3.54299 16 2.45829 14.9986 2.35435 13.6994L1.4584 2.5ZM2.5416 3.5L3.35117 13.6196C3.41353 14.3992 4.06435 15 4.84639 15H11.1486C11.9322 15 12.5837 14.3968 12.6441 13.6155L13.4256 3.5H2.5416Z"/>
+                                <path d="M11 3.5H5V1.46875C5 0.657582 5.65758 0 6.46875 0H9.53125C10.3424 0 11 0.657582 11 1.46875V3.5ZM6.46875 1C6.20987 1 6 1.20987 6 1.46875V2.5H10V1.46875C10 1.20987 9.79013 1 9.53125 1H6.46875Z"/>
+                            </svg>
                         </div>
                     </div>
                 </div>
-                <div class="right_side_grey">
-                    <div class="images">
-                        <svg class="like" width="20" height="16" viewBox="0 0 20 16" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3.03399 2.05857C2.26592 2.75224 1.76687 3.83284 1.99496 5.42928C2.22335 7.02783 3.26497 8.68522 4.80439 10.3478C6.25868 11.9184 8.10965 13.4437 9.99999 14.874C11.8903 13.4437 13.7413 11.9184 15.1956 10.3478C16.7351 8.68521 17.7767 7.02783 18.005 5.4293C18.2331 3.83285 17.734 2.75224 16.9659 2.05856C16.1767 1.34572 15.055 1 14 1C12.132 1 11.0924 2.08479 10.5177 2.68443C10.4581 2.7466 10.4035 2.80356 10.3535 2.85355C10.1583 3.04882 9.84169 3.04882 9.64643 2.85355C9.59644 2.80356 9.54185 2.7466 9.48227 2.68443C8.9076 2.08479 7.868 1 5.99999 1C4.94498 1 3.82328 1.34573 3.03399 2.05857ZM2.36374 1.31643C3.37372 0.404274 4.75205 0 5.99999 0C8.07126 0 9.34542 1.11257 9.99999 1.77862C10.6545 1.11257 11.9287 0 14 0C15.2479 0 16.6262 0.404275 17.6362 1.31644C18.6674 2.24776 19.2669 3.66715 18.995 5.5707C18.7233 7.47217 17.515 9.31479 15.9294 11.0272C14.3355 12.7486 12.3064 14.3952 10.3 15.9C10.1222 16.0333 9.87776 16.0333 9.69999 15.9C7.69356 14.3952 5.66446 12.7485 4.07063 11.0272C2.48506 9.31478 1.27668 7.47217 1.00501 5.57072C0.733043 3.66716 1.33253 2.24776 2.36374 1.31643Z"/>
-                        </svg>
-                        <svg class="delete" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H15C15.2761 2.5 15.5 2.72386 15.5 3C15.5 3.27614 15.2761 3.5 15 3.5H1C0.723858 3.5 0.5 3.27614 0.5 3Z"/>
-                            <path d="M1.4584 2.5H14.5059L13.6411 13.6926C13.5405 14.9947 12.4546 16 11.1486 16H4.84639C3.54299 16 2.45829 14.9986 2.35435 13.6994L1.4584 2.5ZM2.5416 3.5L3.35117 13.6196C3.41353 14.3992 4.06435 15 4.84639 15H11.1486C11.9322 15 12.5837 14.3968 12.6441 13.6155L13.4256 3.5H2.5416Z"/>
-                            <path d="M11 3.5H5V1.46875C5 0.657582 5.65758 0 6.46875 0H9.53125C10.3424 0 11 0.657582 11 1.46875V3.5ZM6.46875 1C6.20987 1 6 1.20987 6 1.46875V2.5H10V1.46875C10 1.20987 9.79013 1 9.53125 1H6.46875Z"/>
-                        </svg>
+                <div class="product grey_product">
+                    <div class="left_side">
+                        <img class="product_image_grey" src="images/products/product_2.jpeg" alt="product_2.jpg">
+                        <div class="description">
+                            <h4 class="name_product_grey">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный
+                                кейс
+                                бампер на Apple iPhone XR, MobiSafe</h4>
+                            <div class="features_grey">
+                                <span>Цвет: прозрачный</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="product grey_product">
-                <div class="left_side">
-                    <img class="product_image_grey" src="images/products/product_2.jpeg" alt="product_2.jpg">
-                    <div class="description">
-                        <h4 class="name_product_grey">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс
-                            бампер на Apple iPhone XR, MobiSafe</h4>
-                        <div class="features_grey">
-                            <span>Цвет: прозрачный</span>
+                    <div class="right_side_grey">
+                        <div class="images">
+                            <svg class="like" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.03399 2.05857C2.26592 2.75224 1.76687 3.83284 1.99496 5.42928C2.22335 7.02783 3.26497 8.68522 4.80439 10.3478C6.25868 11.9184 8.10965 13.4437 9.99999 14.874C11.8903 13.4437 13.7413 11.9184 15.1956 10.3478C16.7351 8.68521 17.7767 7.02783 18.005 5.4293C18.2331 3.83285 17.734 2.75224 16.9659 2.05856C16.1767 1.34572 15.055 1 14 1C12.132 1 11.0924 2.08479 10.5177 2.68443C10.4581 2.7466 10.4035 2.80356 10.3535 2.85355C10.1583 3.04882 9.84169 3.04882 9.64643 2.85355C9.59644 2.80356 9.54185 2.7466 9.48227 2.68443C8.9076 2.08479 7.868 1 5.99999 1C4.94498 1 3.82328 1.34573 3.03399 2.05857ZM2.36374 1.31643C3.37372 0.404274 4.75205 0 5.99999 0C8.07126 0 9.34542 1.11257 9.99999 1.77862C10.6545 1.11257 11.9287 0 14 0C15.2479 0 16.6262 0.404275 17.6362 1.31644C18.6674 2.24776 19.2669 3.66715 18.995 5.5707C18.7233 7.47217 17.515 9.31479 15.9294 11.0272C14.3355 12.7486 12.3064 14.3952 10.3 15.9C10.1222 16.0333 9.87776 16.0333 9.69999 15.9C7.69356 14.3952 5.66446 12.7485 4.07063 11.0272C2.48506 9.31478 1.27668 7.47217 1.00501 5.57072C0.733043 3.66716 1.33253 2.24776 2.36374 1.31643Z"/>
+                            </svg>
+                            <svg class="delete" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H15C15.2761 2.5 15.5 2.72386 15.5 3C15.5 3.27614 15.2761 3.5 15 3.5H1C0.723858 3.5 0.5 3.27614 0.5 3Z"/>
+                                <path d="M1.4584 2.5H14.5059L13.6411 13.6926C13.5405 14.9947 12.4546 16 11.1486 16H4.84639C3.54299 16 2.45829 14.9986 2.35435 13.6994L1.4584 2.5ZM2.5416 3.5L3.35117 13.6196C3.41353 14.3992 4.06435 15 4.84639 15H11.1486C11.9322 15 12.5837 14.3968 12.6441 13.6155L13.4256 3.5H2.5416Z"/>
+                                <path d="M11 3.5H5V1.46875C5 0.657582 5.65758 0 6.46875 0H9.53125C10.3424 0 11 0.657582 11 1.46875V3.5ZM6.46875 1C6.20987 1 6 1.20987 6 1.46875V2.5H10V1.46875C10 1.20987 9.79013 1 9.53125 1H6.46875Z"/>
+                            </svg>
                         </div>
                     </div>
                 </div>
-                <div class="right_side_grey">
-                    <div class="images">
-                        <svg class="like" width="20" height="16" viewBox="0 0 20 16" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3.03399 2.05857C2.26592 2.75224 1.76687 3.83284 1.99496 5.42928C2.22335 7.02783 3.26497 8.68522 4.80439 10.3478C6.25868 11.9184 8.10965 13.4437 9.99999 14.874C11.8903 13.4437 13.7413 11.9184 15.1956 10.3478C16.7351 8.68521 17.7767 7.02783 18.005 5.4293C18.2331 3.83285 17.734 2.75224 16.9659 2.05856C16.1767 1.34572 15.055 1 14 1C12.132 1 11.0924 2.08479 10.5177 2.68443C10.4581 2.7466 10.4035 2.80356 10.3535 2.85355C10.1583 3.04882 9.84169 3.04882 9.64643 2.85355C9.59644 2.80356 9.54185 2.7466 9.48227 2.68443C8.9076 2.08479 7.868 1 5.99999 1C4.94498 1 3.82328 1.34573 3.03399 2.05857ZM2.36374 1.31643C3.37372 0.404274 4.75205 0 5.99999 0C8.07126 0 9.34542 1.11257 9.99999 1.77862C10.6545 1.11257 11.9287 0 14 0C15.2479 0 16.6262 0.404275 17.6362 1.31644C18.6674 2.24776 19.2669 3.66715 18.995 5.5707C18.7233 7.47217 17.515 9.31479 15.9294 11.0272C14.3355 12.7486 12.3064 14.3952 10.3 15.9C10.1222 16.0333 9.87776 16.0333 9.69999 15.9C7.69356 14.3952 5.66446 12.7485 4.07063 11.0272C2.48506 9.31478 1.27668 7.47217 1.00501 5.57072C0.733043 3.66716 1.33253 2.24776 2.36374 1.31643Z"/>
-                        </svg>
-                        <svg class="delete" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H15C15.2761 2.5 15.5 2.72386 15.5 3C15.5 3.27614 15.2761 3.5 15 3.5H1C0.723858 3.5 0.5 3.27614 0.5 3Z"/>
-                            <path d="M1.4584 2.5H14.5059L13.6411 13.6926C13.5405 14.9947 12.4546 16 11.1486 16H4.84639C3.54299 16 2.45829 14.9986 2.35435 13.6994L1.4584 2.5ZM2.5416 3.5L3.35117 13.6196C3.41353 14.3992 4.06435 15 4.84639 15H11.1486C11.9322 15 12.5837 14.3968 12.6441 13.6155L13.4256 3.5H2.5416Z"/>
-                            <path d="M11 3.5H5V1.46875C5 0.657582 5.65758 0 6.46875 0H9.53125C10.3424 0 11 0.657582 11 1.46875V3.5ZM6.46875 1C6.20987 1 6 1.20987 6 1.46875V2.5H10V1.46875C10 1.20987 9.79013 1 9.53125 1H6.46875Z"/>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-            <div class="product grey_product">
-                <div class="left_side">
-                    <img class="product_image_grey" src="images/products/product_3.jpeg" alt="product_3.jpg">
+                <div class="product grey_product">
+                    <div class="left_side">
+                        <img class="product_image_grey" src="images/products/product_3.jpeg" alt="product_3.jpg">
 
-                    <div class="description">
-                        <h4 class="name_product_grey">Карандаши цветные Faber-Castell "Замок", набор 24 цвета,
-                            заточенные, шестигранные,Faber-Castell </h4>
+                        <div class="description">
+                            <h4 class="name_product_grey">Карандаши цветные Faber-Castell "Замок", набор 24 цвета,
+                                заточенные, шестигранные,Faber-Castell </h4>
+                        </div>
                     </div>
-                </div>
-                <div class="right_side_grey">
-                    <div class="images">
-                        <svg class="like" width="20" height="16" viewBox="0 0 20 16" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3.03399 2.05857C2.26592 2.75224 1.76687 3.83284 1.99496 5.42928C2.22335 7.02783 3.26497 8.68522 4.80439 10.3478C6.25868 11.9184 8.10965 13.4437 9.99999 14.874C11.8903 13.4437 13.7413 11.9184 15.1956 10.3478C16.7351 8.68521 17.7767 7.02783 18.005 5.4293C18.2331 3.83285 17.734 2.75224 16.9659 2.05856C16.1767 1.34572 15.055 1 14 1C12.132 1 11.0924 2.08479 10.5177 2.68443C10.4581 2.7466 10.4035 2.80356 10.3535 2.85355C10.1583 3.04882 9.84169 3.04882 9.64643 2.85355C9.59644 2.80356 9.54185 2.7466 9.48227 2.68443C8.9076 2.08479 7.868 1 5.99999 1C4.94498 1 3.82328 1.34573 3.03399 2.05857ZM2.36374 1.31643C3.37372 0.404274 4.75205 0 5.99999 0C8.07126 0 9.34542 1.11257 9.99999 1.77862C10.6545 1.11257 11.9287 0 14 0C15.2479 0 16.6262 0.404275 17.6362 1.31644C18.6674 2.24776 19.2669 3.66715 18.995 5.5707C18.7233 7.47217 17.515 9.31479 15.9294 11.0272C14.3355 12.7486 12.3064 14.3952 10.3 15.9C10.1222 16.0333 9.87776 16.0333 9.69999 15.9C7.69356 14.3952 5.66446 12.7485 4.07063 11.0272C2.48506 9.31478 1.27668 7.47217 1.00501 5.57072C0.733043 3.66716 1.33253 2.24776 2.36374 1.31643Z"/>
-                        </svg>
-                        <svg class="delete" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H15C15.2761 2.5 15.5 2.72386 15.5 3C15.5 3.27614 15.2761 3.5 15 3.5H1C0.723858 3.5 0.5 3.27614 0.5 3Z"/>
-                            <path d="M1.4584 2.5H14.5059L13.6411 13.6926C13.5405 14.9947 12.4546 16 11.1486 16H4.84639C3.54299 16 2.45829 14.9986 2.35435 13.6994L1.4584 2.5ZM2.5416 3.5L3.35117 13.6196C3.41353 14.3992 4.06435 15 4.84639 15H11.1486C11.9322 15 12.5837 14.3968 12.6441 13.6155L13.4256 3.5H2.5416Z"/>
-                            <path d="M11 3.5H5V1.46875C5 0.657582 5.65758 0 6.46875 0H9.53125C10.3424 0 11 0.657582 11 1.46875V3.5ZM6.46875 1C6.20987 1 6 1.20987 6 1.46875V2.5H10V1.46875C10 1.20987 9.79013 1 9.53125 1H6.46875Z"/>
-                        </svg>
+                    <div class="right_side_grey">
+                        <div class="images">
+                            <svg class="like" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.03399 2.05857C2.26592 2.75224 1.76687 3.83284 1.99496 5.42928C2.22335 7.02783 3.26497 8.68522 4.80439 10.3478C6.25868 11.9184 8.10965 13.4437 9.99999 14.874C11.8903 13.4437 13.7413 11.9184 15.1956 10.3478C16.7351 8.68521 17.7767 7.02783 18.005 5.4293C18.2331 3.83285 17.734 2.75224 16.9659 2.05856C16.1767 1.34572 15.055 1 14 1C12.132 1 11.0924 2.08479 10.5177 2.68443C10.4581 2.7466 10.4035 2.80356 10.3535 2.85355C10.1583 3.04882 9.84169 3.04882 9.64643 2.85355C9.59644 2.80356 9.54185 2.7466 9.48227 2.68443C8.9076 2.08479 7.868 1 5.99999 1C4.94498 1 3.82328 1.34573 3.03399 2.05857ZM2.36374 1.31643C3.37372 0.404274 4.75205 0 5.99999 0C8.07126 0 9.34542 1.11257 9.99999 1.77862C10.6545 1.11257 11.9287 0 14 0C15.2479 0 16.6262 0.404275 17.6362 1.31644C18.6674 2.24776 19.2669 3.66715 18.995 5.5707C18.7233 7.47217 17.515 9.31479 15.9294 11.0272C14.3355 12.7486 12.3064 14.3952 10.3 15.9C10.1222 16.0333 9.87776 16.0333 9.69999 15.9C7.69356 14.3952 5.66446 12.7485 4.07063 11.0272C2.48506 9.31478 1.27668 7.47217 1.00501 5.57072C0.733043 3.66716 1.33253 2.24776 2.36374 1.31643Z"/>
+                            </svg>
+                            <svg class="delete" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H15C15.2761 2.5 15.5 2.72386 15.5 3C15.5 3.27614 15.2761 3.5 15 3.5H1C0.723858 3.5 0.5 3.27614 0.5 3Z"/>
+                                <path d="M1.4584 2.5H14.5059L13.6411 13.6926C13.5405 14.9947 12.4546 16 11.1486 16H4.84639C3.54299 16 2.45829 14.9986 2.35435 13.6994L1.4584 2.5ZM2.5416 3.5L3.35117 13.6196C3.41353 14.3992 4.06435 15 4.84639 15H11.1486C11.9322 15 12.5837 14.3968 12.6441 13.6155L13.4256 3.5H2.5416Z"/>
+                                <path d="M11 3.5H5V1.46875C5 0.657582 5.65758 0 6.46875 0H9.53125C10.3424 0 11 0.657582 11 1.46875V3.5ZM6.46875 1C6.20987 1 6 1.20987 6 1.46875V2.5H10V1.46875C10 1.20987 9.79013 1 9.53125 1H6.46875Z"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -591,9 +700,13 @@
             </div>
             <div class="back_delivery back_delivery_main">
                 <img src="images/cheque/price_shipping_icon.svg" alt="price_shipping_icon.svg">
-                <p>Обратная доставка товаров на склад при отказе —
-                    <span>бесплатно</span>
-                </p>
+                <div class="terms">Обратная доставка товаров на склад при отказе —
+                    <div class="back_delivery_word">бесплатно
+                        <div class="free_delivery_terms">
+                            <p>Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -629,26 +742,31 @@
             <form class="recipient_form" action="">
                 <div class="form_row">
                     <div class="form_group">
-                        <input class="input_form_group" type="text" placeholder=" ">
+                        <input class="input_form_group" name="name" type="text" placeholder=" " required>
                         <label class="label_form_group">Имя</label>
+                        <div class="error_text error_row">Укажите имя</div>
                     </div>
                     <div class="form_group">
-                        <input class="input_form_group" type="text" placeholder=" ">
+                        <input class="input_form_group" name="last name" type="text" placeholder=" " required>
                         <label class="label_form_group">Фамилия</label>
+                        <div class="error_text error_row">Укажите фамилию</div>
                     </div>
                 </div>
                 <div class="form_row">
                     <div class="form_group">
-                        <input class="input_form_group" type="text" placeholder=" ">
+                        <input class="input_form_group input-email" name="email" type="text" placeholder=" " required>
                         <label class="label_form_group">Почта</label>
+                        <div class="error_text">Укажите почту</div>
                     </div>
                     <div class="form_group">
-                        <input class="input_form_group" type="text" placeholder=" ">
+                        <input class="input_form_group input-phone" name="phone" type="text" placeholder=" " required>
                         <label class="label_form_group">Телефон</label>
+                        <div class="error_text">Укажите телефон</div>
                     </div>
                     <div class="form_group">
-                        <input class="input_form_group" type="text" placeholder=" ">
+                        <input class="input_form_group input-inn" name="Inn" type="text" placeholder=" " required>
                         <label class="label_form_group">Инн</label>
+                        <div class="error_text">Укажите Инн</div>
                         <p class="form_group_subtitle">
                             Для таможенного оформления
                         </p>
@@ -693,9 +811,13 @@
                     <span class="date">5–8 фев</span>
                     <div class="back_delivery back_delivery_down_cheque">
                         <img src="images/cheque/price_shipping_icon.svg" alt="price_shipping_icon.svg">
-                        <p>Обратная доставка товаров на склад при отказе —
-                            <span>бесплатно</span>
-                        </p>
+                        <div>Обратная доставка товаров на склад при отказе —
+                            <div class="back_delivery_word">бесплатно
+                                <div class="free_delivery_terms">
+                                    <p>Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="payment">
@@ -708,7 +830,7 @@
                         <span class="number">1234 12•• •••• 1234</span>
                     </div>
                     <div class="write-down">
-                        <label class="label">
+                        <label class="label_cheque">
                             <input type="checkbox" class="checkbox">
                             <span class="select select_cheque">Списать оплату сразу</span>
                         </label>
@@ -724,8 +846,8 @@
                     <div class="agreement">
                         <img src="images/cheque/black_checkmark.svg" alt="black_checkmark.svg">
                         <p>Соглашаюсь
-                        <span class="rules">с правилами пользования торговой площадкой</span>
-                        и <span class="rules">возврата</span></p>
+                            <span class="rules">с правилами пользования торговой площадкой</span>
+                            и <span class="rules">возврата</span></p>
                     </div>
                 </div>
             </div>
