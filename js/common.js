@@ -40,16 +40,16 @@ function validatePhone(phone) {
 
 
 paymentButton.addEventListener('click', function() {
-
     formInputs.forEach(input => {
-        errorText.forEach(elem => {
-            if(input.value === '') {
-                console.log(input.value)
-                elem.classList.add('active')
-            } else {
-                elem.classList.remove('active')
-            }
-        })
+        if (input.value === '') {
+            errorText.forEach(elem => {
+                if (input.value === '') {
+                    elem.classList.add('active')
+                } else {
+                    elem.classList.remove('active')
+                }
+            })
+        }
     })
 })
 

@@ -278,7 +278,7 @@ header {
     background-color: #CB11AB;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("/images/products/checkmark.svg");
+    background-image: url("/goods-and-point/images/products/checkmark.svg");
     border-radius: 8px;
     opacity: 0;
     transition: .2s ease;
