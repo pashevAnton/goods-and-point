@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Segoe UI';
-    src: local('SegoeUI'),
+    src: local('SegoeUIRegular'),
     url('/goods-and-point/fonts/SegoeUIRegular/SegoeUI.ttf') format('truetype'),
     url('/goods-and-point/fonts/SegoeUIRegular/SegoeUI.woff') format('woff'),
     url('/goods-and-point/fonts/SegoeUIRegular/SegoeUI.woff2') format('woff2');
@@ -18,9 +18,9 @@
 @font-face {
     font-family: 'Segoe UI Semibold';
     src: local('SegoeUISemibold'),
-    url('/goods-and-point/fonts/SegoeUISemibold/SegoeUI-Semibold.ttf') format('truetype'),
-    url('/goods-and-point/fonts/SegoeUISemibold/SegoeUI-Semibold.woff') format('woff'),
-    url('/goods-and-point/fonts/SegoeUISemibold/SegoeUI-Semibold.woff2') format('woff2');
+    url('/goods-and-point/fonts/SegoeUISemibold/SegoeUI-SemiBold.ttf') format('truetype'),
+    url('/goods-and-point/fonts/SegoeUISemibold/SegoeUI-SemiBold.woff') format('woff'),
+    url('/goods-and-point/fonts/SegoeUISemibold/SegoeUI-SemiBold.woff2') format('woff2');
 }
 
 
